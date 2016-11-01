@@ -1,0 +1,7298 @@
+[
+ {
+  "name" : "CVector",
+  "kind" : "module",
+  "file" : "CVector.d",
+  "members" : [
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.runtime",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.windows",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.stdc.stdlib",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.stdc.string",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "line" : 10,
+    "char" : 1,
+    "name" : "vecMath",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "len2D",
+      "kind" : "function",
+      "line" : 12,
+      "char" : 4,
+      "type" : "T(T X, T Y)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       }
+      ],
+      "endline" : 15,
+      "endchar" : 2
+     },
+     {
+      "name" : "norm2D",
+      "kind" : "function",
+      "line" : 16,
+      "char" : 7,
+      "type" : "T[2](T X, T Y)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       }
+      ],
+      "endline" : 22,
+      "endchar" : 2
+     },
+     {
+      "name" : "len3D",
+      "kind" : "function",
+      "line" : 24,
+      "char" : 4,
+      "type" : "T(T X, T Y, T Z)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       },
+       {
+        "name" : "Z",
+        "type" : "T"
+       }
+      ],
+      "endline" : 27,
+      "endchar" : 2
+     },
+     {
+      "name" : "norm3D",
+      "kind" : "function",
+      "line" : 28,
+      "char" : 7,
+      "type" : "T[3](T X, T Y, T Z)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       },
+       {
+        "name" : "Z",
+        "type" : "T"
+       }
+      ],
+      "endline" : 35,
+      "endchar" : 2
+     },
+     {
+      "name" : "len4D",
+      "kind" : "function",
+      "line" : 37,
+      "char" : 4,
+      "type" : "T(T W, T X, T Y, T Z)",
+      "parameters" : [
+       {
+        "name" : "W",
+        "type" : "T"
+       },
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       },
+       {
+        "name" : "Z",
+        "type" : "T"
+       }
+      ],
+      "endline" : 40,
+      "endchar" : 2
+     },
+     {
+      "name" : "norm4D",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 7,
+      "type" : "T[4](T W, T X, T Y, T Z)",
+      "parameters" : [
+       {
+        "name" : "W",
+        "type" : "T"
+       },
+       {
+        "name" : "X",
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "type" : "T"
+       },
+       {
+        "name" : "Z",
+        "type" : "T"
+       }
+      ],
+      "endline" : 49,
+      "endchar" : 2
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 52,
+    "char" : 1,
+    "name" : "CVector2D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector2D",
+      "kind" : "class",
+      "line" : 52,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "X",
+        "kind" : "variable",
+        "line" : 54,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "kind" : "variable",
+        "line" : 55,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 57,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 64,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 65,
+        "char" : 2,
+        "type" : "(T X, T Y)",
+        "parameters" : [
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         }
+        ],
+        "endline" : 69,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 70,
+        "char" : 2,
+        "type" : "(T[2] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[2]"
+         }
+        ],
+        "endline" : 74,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 75,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 79,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 80,
+        "char" : 2,
+        "type" : "(CVector2D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector2D"
+         }
+        ],
+        "endline" : 84,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 85,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 89,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 91,
+        "char" : 9,
+        "type" : "size_t()",
+        "endline" : 94,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 96,
+        "char" : 14,
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 108,
+        "endchar" : 2
+       },
+       {
+        "name" : "length",
+        "kind" : "function",
+        "line" : 110,
+        "char" : 8,
+        "type" : "float()",
+        "endline" : 113,
+        "endchar" : 2
+       },
+       {
+        "name" : "Normalize",
+        "kind" : "function",
+        "line" : 115,
+        "char" : 7,
+        "type" : "void()",
+        "endline" : 120,
+        "endchar" : 2
+       },
+       {
+        "name" : "norm",
+        "kind" : "function",
+        "line" : 122,
+        "char" : 12,
+        "type" : "CVector2D()",
+        "endline" : 125,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 128,
+    "char" : 1,
+    "name" : "CVector2D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type",
+      "deco" : "Aya"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector2D",
+      "kind" : "class",
+      "line" : 128,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "X",
+        "kind" : "variable",
+        "line" : 130,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "Y",
+        "kind" : "variable",
+        "line" : 131,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 133,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 140,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 141,
+        "char" : 2,
+        "type" : "(T X, T Y)",
+        "parameters" : [
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         }
+        ],
+        "endline" : 145,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 146,
+        "char" : 2,
+        "type" : "(T[2] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[2]"
+         }
+        ],
+        "endline" : 150,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 151,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 155,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 156,
+        "char" : 2,
+        "type" : "(CVector2D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector2D"
+         }
+        ],
+        "endline" : 160,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 161,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 165,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 167,
+        "char" : 9,
+        "type" : "size_t()",
+        "endline" : 170,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 172,
+        "char" : 14,
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 184,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 187,
+    "char" : 1,
+    "name" : "CVector3D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector3D",
+      "kind" : "class",
+      "line" : 187,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "Z",
+        "kind" : "variable",
+        "line" : 189,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 191,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 198,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 199,
+        "char" : 2,
+        "type" : "(T X, T Y, T Z)",
+        "parameters" : [
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         },
+         {
+          "name" : "Z",
+          "type" : "T"
+         }
+        ],
+        "endline" : 203,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 204,
+        "char" : 2,
+        "type" : "(T[3] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[3]"
+         }
+        ],
+        "endline" : 209,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 210,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 214,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 215,
+        "char" : 2,
+        "type" : "(CVector3D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector3D"
+         }
+        ],
+        "endline" : 220,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 221,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 225,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 227,
+        "char" : 18,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "size_t()",
+        "endline" : 230,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 232,
+        "char" : 23,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 246,
+        "endchar" : 2
+       },
+       {
+        "name" : "length",
+        "kind" : "function",
+        "line" : 248,
+        "char" : 17,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "float()",
+        "endline" : 251,
+        "endchar" : 2
+       },
+       {
+        "name" : "Normalize",
+        "kind" : "function",
+        "line" : 253,
+        "char" : 16,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "void()",
+        "endline" : 259,
+        "endchar" : 2
+       },
+       {
+        "name" : "norm",
+        "kind" : "function",
+        "line" : 261,
+        "char" : 21,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "CVector3D()",
+        "endline" : 264,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 267,
+    "char" : 1,
+    "name" : "CVector3D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type",
+      "deco" : "Aya"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector3D",
+      "kind" : "class",
+      "line" : 267,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "Z",
+        "kind" : "variable",
+        "line" : 269,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 271,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 278,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 279,
+        "char" : 2,
+        "type" : "(T X, T Y, T Z)",
+        "parameters" : [
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         },
+         {
+          "name" : "Z",
+          "type" : "T"
+         }
+        ],
+        "endline" : 283,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 284,
+        "char" : 2,
+        "type" : "(T[3] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[3]"
+         }
+        ],
+        "endline" : 289,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 290,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 294,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 295,
+        "char" : 2,
+        "type" : "(CVector3D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector3D"
+         }
+        ],
+        "endline" : 300,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 301,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 305,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 307,
+        "char" : 18,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "size_t()",
+        "endline" : 310,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 312,
+        "char" : 23,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 326,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 329,
+    "char" : 1,
+    "name" : "CVector4D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector4D",
+      "kind" : "class",
+      "line" : 329,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "W",
+        "kind" : "variable",
+        "line" : 331,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 333,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 341,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 342,
+        "char" : 2,
+        "type" : "(T W, T X, T Y, T Z)",
+        "parameters" : [
+         {
+          "name" : "W",
+          "type" : "T"
+         },
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         },
+         {
+          "name" : "Z",
+          "type" : "T"
+         }
+        ],
+        "endline" : 346,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 347,
+        "char" : 2,
+        "type" : "(T[4] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[4]"
+         }
+        ],
+        "endline" : 353,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 354,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 360,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 361,
+        "char" : 2,
+        "type" : "(CVector4D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector4D"
+         }
+        ],
+        "endline" : 367,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 368,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 372,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 374,
+        "char" : 18,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "size_t()",
+        "endline" : 377,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 379,
+        "char" : 23,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 395,
+        "endchar" : 2
+       },
+       {
+        "name" : "length",
+        "kind" : "function",
+        "line" : 397,
+        "char" : 17,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "float()",
+        "endline" : 400,
+        "endchar" : 2
+       },
+       {
+        "name" : "Normalize",
+        "kind" : "function",
+        "line" : 402,
+        "char" : 16,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "void()",
+        "endline" : 408,
+        "endchar" : 2
+       },
+       {
+        "name" : "norm",
+        "kind" : "function",
+        "line" : 410,
+        "char" : 21,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "CVector4D()",
+        "endline" : 413,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 416,
+    "char" : 1,
+    "name" : "CVector4D",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type",
+      "deco" : "Aya"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CVector4D",
+      "kind" : "class",
+      "line" : 416,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "W",
+        "kind" : "variable",
+        "line" : 418,
+        "char" : 11,
+        "type" : "T"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 420,
+        "char" : 2,
+        "type" : "(void* _addr)",
+        "parameters" : [
+         {
+          "name" : "_addr",
+          "type" : "void*"
+         }
+        ],
+        "endline" : 428,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 429,
+        "char" : 2,
+        "type" : "(T W, T X, T Y, T Z)",
+        "parameters" : [
+         {
+          "name" : "W",
+          "type" : "T"
+         },
+         {
+          "name" : "X",
+          "type" : "T"
+         },
+         {
+          "name" : "Y",
+          "type" : "T"
+         },
+         {
+          "name" : "Z",
+          "type" : "T"
+         }
+        ],
+        "endline" : 433,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 434,
+        "char" : 2,
+        "type" : "(T[4] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[4]"
+         }
+        ],
+        "endline" : 440,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 441,
+        "char" : 2,
+        "type" : "(T[] vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 447,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 448,
+        "char" : 2,
+        "type" : "(CVector4D vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "CVector4D"
+         }
+        ],
+        "endline" : 454,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 455,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 459,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 461,
+        "char" : 18,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "size_t()",
+        "endline" : 464,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 466,
+        "char" : 23,
+        "storageClass" : [
+         "override"
+        ],
+        "type" : "ref @safe T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 482,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 485,
+    "char" : 1,
+    "name" : "vector",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "vector",
+      "kind" : "class",
+      "line" : 485,
+      "char" : 1,
+      "members" : [
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 487,
+        "char" : 2,
+        "type" : "()",
+        "endline" : 487,
+        "endchar" : 10
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 488,
+        "char" : 2,
+        "type" : "(T[] v...)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 496,
+        "endchar" : 2
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 497,
+        "char" : 2,
+        "type" : "(size_t size)",
+        "parameters" : [
+         {
+          "name" : "size",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 500,
+        "endchar" : 2
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 502,
+        "char" : 8,
+        "type" : "ref T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 510,
+        "endchar" : 2
+       },
+       {
+        "name" : "opApply",
+        "kind" : "function",
+        "line" : 511,
+        "char" : 6,
+        "type" : "int(scope int delegate(ref T) dg)",
+        "parameters" : [
+         {
+          "name" : "dg",
+          "type" : "int delegate(ref T)",
+          "storageClass" : [
+           "scope"
+          ]
+         }
+        ],
+        "endline" : 522,
+        "endchar" : 2
+       },
+       {
+        "name" : "opApplyReverse",
+        "kind" : "function",
+        "line" : 523,
+        "char" : 6,
+        "type" : "int(scope int delegate(ref T) dg)",
+        "parameters" : [
+         {
+          "name" : "dg",
+          "type" : "int delegate(ref T)",
+          "storageClass" : [
+           "scope"
+          ]
+         }
+        ],
+        "endline" : 534,
+        "endchar" : 2
+       },
+       {
+        "name" : "push_back",
+        "kind" : "function",
+        "line" : 536,
+        "char" : 7,
+        "type" : "void(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 539,
+        "endchar" : 2
+       },
+       {
+        "name" : "push_front",
+        "kind" : "function",
+        "line" : 540,
+        "char" : 7,
+        "type" : "void(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 543,
+        "endchar" : 2
+       },
+       {
+        "name" : "pop_back",
+        "kind" : "function",
+        "line" : 544,
+        "char" : 4,
+        "type" : "T()",
+        "endline" : 547,
+        "endchar" : 2
+       },
+       {
+        "name" : "pop_front",
+        "kind" : "function",
+        "line" : 548,
+        "char" : 4,
+        "type" : "T()",
+        "endline" : 551,
+        "endchar" : 2
+       },
+       {
+        "name" : "size",
+        "kind" : "function",
+        "line" : 553,
+        "char" : 9,
+        "type" : "size_t()",
+        "endline" : 556,
+        "endchar" : 2
+       },
+       {
+        "name" : "max_size",
+        "kind" : "function",
+        "line" : 557,
+        "char" : 9,
+        "type" : "size_t()",
+        "endline" : 560,
+        "endchar" : 2
+       },
+       {
+        "name" : "clear",
+        "kind" : "function",
+        "line" : 562,
+        "char" : 7,
+        "type" : "void()",
+        "endline" : 568,
+        "endchar" : 2
+       },
+       {
+        "name" : "shrink_to_fit",
+        "kind" : "function",
+        "line" : 569,
+        "char" : 7,
+        "type" : "void()",
+        "endline" : 572,
+        "endchar" : 2
+       },
+       {
+        "name" : "sort",
+        "kind" : "function",
+        "line" : 574,
+        "char" : 7,
+        "type" : "void()",
+        "endline" : 578,
+        "endchar" : 2
+       },
+       {
+        "name" : "reverse",
+        "kind" : "function",
+        "line" : 579,
+        "char" : 7,
+        "type" : "void()",
+        "endline" : 582,
+        "endchar" : 2
+       },
+       {
+        "name" : "erase",
+        "kind" : "function",
+        "line" : 584,
+        "char" : 4,
+        "type" : "T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 593,
+        "endchar" : 2
+       },
+       {
+        "name" : "insert",
+        "kind" : "function",
+        "line" : 594,
+        "char" : 7,
+        "type" : "void(size_t id, T v)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         },
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 604,
+        "endchar" : 2
+       },
+       {
+        "name" : "front",
+        "kind" : "function",
+        "line" : 606,
+        "char" : 8,
+        "type" : "ref T()",
+        "endline" : 610,
+        "endchar" : 2
+       },
+       {
+        "name" : "back",
+        "kind" : "function",
+        "line" : 611,
+        "char" : 8,
+        "type" : "ref T()",
+        "endline" : 615,
+        "endchar" : 2
+       },
+       {
+        "name" : "data",
+        "kind" : "function",
+        "line" : 616,
+        "char" : 10,
+        "type" : "ref T[]()",
+        "endline" : 620,
+        "endchar" : 2
+       },
+       {
+        "name" : "at",
+        "kind" : "function",
+        "line" : 622,
+        "char" : 8,
+        "type" : "ref T(size_t id)",
+        "parameters" : [
+         {
+          "name" : "id",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 629,
+        "endchar" : 2
+       },
+       {
+        "name" : "empty",
+        "kind" : "function",
+        "line" : 631,
+        "char" : 7,
+        "type" : "bool()",
+        "endline" : 634,
+        "endchar" : 2
+       },
+       {
+        "name" : "capacity",
+        "kind" : "function",
+        "line" : 635,
+        "char" : 9,
+        "type" : "size_t()",
+        "endline" : 638,
+        "endchar" : 2
+       },
+       {
+        "name" : "swap",
+        "kind" : "function",
+        "line" : 640,
+        "char" : 7,
+        "type" : "bool(vector vec)",
+        "parameters" : [
+         {
+          "name" : "vec",
+          "type" : "vector"
+         }
+        ],
+        "endline" : 657,
+        "endchar" : 2
+       },
+       {
+        "name" : "resize",
+        "kind" : "function",
+        "line" : 659,
+        "char" : 7,
+        "type" : "void(size_t new_size)",
+        "parameters" : [
+         {
+          "name" : "new_size",
+          "type" : "size_t"
+         }
+        ],
+        "endline" : 664,
+        "endchar" : 2
+       },
+       {
+        "name" : "find",
+        "kind" : "function",
+        "line" : 666,
+        "char" : 8,
+        "type" : "ref T(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 671,
+        "endchar" : 2
+       },
+       {
+        "name" : "_values",
+        "kind" : "variable",
+        "line" : 674,
+        "char" : 6,
+        "type" : "T[]"
+       },
+       {
+        "name" : "_end",
+        "kind" : "variable",
+        "line" : 675,
+        "char" : 9,
+        "type" : "size_t"
+       },
+       {
+        "name" : "_sort",
+        "kind" : "variable",
+        "line" : 676,
+        "char" : 7,
+        "deco" : "b",
+        "init" : "false"
+       },
+       {
+        "name" : "fastFind",
+        "kind" : "function",
+        "line" : 678,
+        "char" : 8,
+        "type" : "ref T(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 698,
+        "endchar" : 2
+       },
+       {
+        "name" : "slowFind",
+        "kind" : "function",
+        "line" : 699,
+        "char" : 8,
+        "type" : "ref T(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 705,
+        "endchar" : 2
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "defines",
+  "kind" : "module",
+  "file" : "defines.d",
+  "members" : [
+   {
+    "name" : "FCR_NONE",
+    "kind" : "variable",
+    "line" : 3,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "0"
+   },
+   {
+    "name" : "FCR_BOLD",
+    "kind" : "variable",
+    "line" : 4,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "1"
+   },
+   {
+    "name" : "FCR_ITALICS",
+    "kind" : "variable",
+    "line" : 5,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "2"
+   },
+   {
+    "name" : "FCR_BORDER",
+    "kind" : "variable",
+    "line" : 6,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "4"
+   },
+   {
+    "name" : "FCR_UNDERLINE",
+    "kind" : "variable",
+    "line" : 7,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "8"
+   },
+   {
+    "name" : "FCR_STRIKEOUT",
+    "kind" : "variable",
+    "line" : 8,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "16"
+   },
+   {
+    "name" : "RAKNET_MAX_PACKET",
+    "kind" : "variable",
+    "line" : 10,
+    "char" : 6,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "i",
+    "init" : "256"
+   },
+   {
+    "name" : "RPCEnumeration",
+    "kind" : "enum",
+    "line" : 12,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "RPC_ClickPlayer",
+      "kind" : "enum member",
+      "value" : "23",
+      "line" : 14,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ClientJoin",
+      "kind" : "enum member",
+      "value" : "25",
+      "line" : 15,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_EnterVehicle",
+      "kind" : "enum member",
+      "value" : "26",
+      "line" : 16,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_EnterEditObject",
+      "kind" : "enum member",
+      "value" : "27",
+      "line" : 17,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ScriptCash",
+      "kind" : "enum member",
+      "value" : "31",
+      "line" : 18,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ServerCommand",
+      "kind" : "enum member",
+      "value" : "50",
+      "line" : 19,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_Spawn",
+      "kind" : "enum member",
+      "value" : "52",
+      "line" : 20,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_Death",
+      "kind" : "enum member",
+      "value" : "53",
+      "line" : 21,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_NPCJoin",
+      "kind" : "enum member",
+      "value" : "54",
+      "line" : 22,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DialogResponse",
+      "kind" : "enum member",
+      "value" : "62",
+      "line" : 23,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ClickTextDraw",
+      "kind" : "enum member",
+      "value" : "83",
+      "line" : 24,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SCMEvent",
+      "kind" : "enum member",
+      "value" : "96",
+      "line" : 25,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_Chat",
+      "kind" : "enum member",
+      "value" : "101",
+      "line" : 26,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SrvNetStats",
+      "kind" : "enum member",
+      "value" : "102",
+      "line" : 27,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ClientCheck",
+      "kind" : "enum member",
+      "value" : "103",
+      "line" : 28,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DamageVehicle",
+      "kind" : "enum member",
+      "value" : "106",
+      "line" : 29,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GiveTakeDamage",
+      "kind" : "enum member",
+      "value" : "115",
+      "line" : 30,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_EditAttachedObject",
+      "kind" : "enum member",
+      "value" : "116",
+      "line" : 31,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_EditObject",
+      "kind" : "enum member",
+      "value" : "117",
+      "line" : 32,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetInteriorId",
+      "kind" : "enum member",
+      "value" : "118",
+      "line" : 33,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_MapMarker",
+      "kind" : "enum member",
+      "value" : "119",
+      "line" : 34,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RequestClass",
+      "kind" : "enum member",
+      "value" : "128",
+      "line" : 35,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RequestSpawn",
+      "kind" : "enum member",
+      "value" : "129",
+      "line" : 36,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PickedUpPickup",
+      "kind" : "enum member",
+      "value" : "131",
+      "line" : 37,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_MenuSelect",
+      "kind" : "enum member",
+      "value" : "132",
+      "line" : 38,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_VehicleDestroyed",
+      "kind" : "enum member",
+      "value" : "136",
+      "line" : 39,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_MenuQuit",
+      "kind" : "enum member",
+      "value" : "140",
+      "line" : 40,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ExitVehicle",
+      "kind" : "enum member",
+      "value" : "154",
+      "line" : 41,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_UpdateScoresPingsIPs",
+      "kind" : "enum member",
+      "value" : "155",
+      "line" : 42,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerName",
+      "kind" : "enum member",
+      "value" : "11",
+      "line" : 45,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerPos",
+      "kind" : "enum member",
+      "value" : "12",
+      "line" : 46,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerPosFindZ",
+      "kind" : "enum member",
+      "value" : "13",
+      "line" : 47,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerHealth",
+      "kind" : "enum member",
+      "value" : "14",
+      "line" : 48,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_TogglePlayerControllable",
+      "kind" : "enum member",
+      "value" : "15",
+      "line" : 49,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PlaySound",
+      "kind" : "enum member",
+      "value" : "16",
+      "line" : 50,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerWorldBounds",
+      "kind" : "enum member",
+      "value" : "17",
+      "line" : 51,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GivePlayerMoney",
+      "kind" : "enum member",
+      "value" : "18",
+      "line" : 52,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerFacingAngle",
+      "kind" : "enum member",
+      "value" : "19",
+      "line" : 53,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ResetPlayerMoney",
+      "kind" : "enum member",
+      "value" : "20",
+      "line" : 54,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ResetPlayerWeapons",
+      "kind" : "enum member",
+      "value" : "21",
+      "line" : 55,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GivePlayerWeapon",
+      "kind" : "enum member",
+      "value" : "22",
+      "line" : 56,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleParamsEx",
+      "kind" : "enum member",
+      "value" : "24",
+      "line" : 57,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_CancelEdit",
+      "kind" : "enum member",
+      "value" : "28",
+      "line" : 58,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerTime",
+      "kind" : "enum member",
+      "value" : "29",
+      "line" : 59,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ToggleClock",
+      "kind" : "enum member",
+      "value" : "30",
+      "line" : 60,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WorldPlayerAdd",
+      "kind" : "enum member",
+      "value" : "32",
+      "line" : 61,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerShopName",
+      "kind" : "enum member",
+      "value" : "33",
+      "line" : 62,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerSkillLevel",
+      "kind" : "enum member",
+      "value" : "34",
+      "line" : 63,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerDrunkLevel",
+      "kind" : "enum member",
+      "value" : "35",
+      "line" : 64,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_Create3DTextLabel",
+      "kind" : "enum member",
+      "value" : "36",
+      "line" : 65,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DisableCheckpoint",
+      "kind" : "enum member",
+      "value" : "37",
+      "line" : 66,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetRaceCheckpoint",
+      "kind" : "enum member",
+      "value" : "38",
+      "line" : 67,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DisableRaceCheckpoint",
+      "kind" : "enum member",
+      "value" : "39",
+      "line" : 68,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GameModeRestart",
+      "kind" : "enum member",
+      "value" : "40",
+      "line" : 69,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PlayAudioStream",
+      "kind" : "enum member",
+      "value" : "41",
+      "line" : 70,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_StopAudioStream",
+      "kind" : "enum member",
+      "value" : "42",
+      "line" : 71,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RemoveBuildingForPlayer",
+      "kind" : "enum member",
+      "value" : "43",
+      "line" : 72,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_CreateObject",
+      "kind" : "enum member",
+      "value" : "44",
+      "line" : 73,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetObjectPos",
+      "kind" : "enum member",
+      "value" : "45",
+      "line" : 74,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetObjectRot",
+      "kind" : "enum member",
+      "value" : "46",
+      "line" : 75,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DestroyObject",
+      "kind" : "enum member",
+      "value" : "47",
+      "line" : 76,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DeathMessage",
+      "kind" : "enum member",
+      "value" : "55",
+      "line" : 77,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerMapIcon",
+      "kind" : "enum member",
+      "value" : "56",
+      "line" : 78,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RemoveVehicleComponent",
+      "kind" : "enum member",
+      "value" : "57",
+      "line" : 79,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_Update3DTextLabel",
+      "kind" : "enum member",
+      "value" : "58",
+      "line" : 80,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ChatBubble",
+      "kind" : "enum member",
+      "value" : "59",
+      "line" : 81,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_UpdateSystemTime",
+      "kind" : "enum member",
+      "value" : "60",
+      "line" : 82,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ShowDialog",
+      "kind" : "enum member",
+      "value" : "61",
+      "line" : 83,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DestroyPickup",
+      "kind" : "enum member",
+      "value" : "63",
+      "line" : 84,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WeaponPickupDestroy",
+      "kind" : "enum member",
+      "value" : "64",
+      "line" : 85,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_LinkVehicleToInterior",
+      "kind" : "enum member",
+      "value" : "65",
+      "line" : 86,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerArmour",
+      "kind" : "enum member",
+      "value" : "66",
+      "line" : 87,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerArmedWeapon",
+      "kind" : "enum member",
+      "value" : "67",
+      "line" : 88,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetSpawnInfo",
+      "kind" : "enum member",
+      "value" : "68",
+      "line" : 89,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerTeam",
+      "kind" : "enum member",
+      "value" : "69",
+      "line" : 90,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PutPlayerInVehicle",
+      "kind" : "enum member",
+      "value" : "70",
+      "line" : 91,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RemovePlayerFromVehicle",
+      "kind" : "enum member",
+      "value" : "71",
+      "line" : 92,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerColor",
+      "kind" : "enum member",
+      "value" : "72",
+      "line" : 93,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DisplayGameText",
+      "kind" : "enum member",
+      "value" : "73",
+      "line" : 94,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ForceClassSelection",
+      "kind" : "enum member",
+      "value" : "74",
+      "line" : 95,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_AttachObjectToPlayer",
+      "kind" : "enum member",
+      "value" : "75",
+      "line" : 96,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_InitMenu",
+      "kind" : "enum member",
+      "value" : "76",
+      "line" : 97,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ShowMenu",
+      "kind" : "enum member",
+      "value" : "77",
+      "line" : 98,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_HideMenu",
+      "kind" : "enum member",
+      "value" : "78",
+      "line" : 99,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_CreateExplosion",
+      "kind" : "enum member",
+      "value" : "79",
+      "line" : 100,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ShowPlayerNameTagForPlayer",
+      "kind" : "enum member",
+      "value" : "80",
+      "line" : 101,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_AttachCameraToObject",
+      "kind" : "enum member",
+      "value" : "81",
+      "line" : 102,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_InterpolateCamera",
+      "kind" : "enum member",
+      "value" : "82",
+      "line" : 103,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetObjectMaterial",
+      "kind" : "enum member",
+      "value" : "84",
+      "line" : 104,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GangZoneStopFlash",
+      "kind" : "enum member",
+      "value" : "85",
+      "line" : 105,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ApplyAnimation",
+      "kind" : "enum member",
+      "value" : "86",
+      "line" : 106,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ClearAnimations",
+      "kind" : "enum member",
+      "value" : "87",
+      "line" : 107,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerSpecialAction",
+      "kind" : "enum member",
+      "value" : "88",
+      "line" : 108,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerFightingStyle",
+      "kind" : "enum member",
+      "value" : "89",
+      "line" : 109,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerVelocity",
+      "kind" : "enum member",
+      "value" : "90",
+      "line" : 110,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleVelocity",
+      "kind" : "enum member",
+      "value" : "91",
+      "line" : 111,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerDrunkVisuals",
+      "kind" : "enum member",
+      "value" : "92",
+      "line" : 112,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ClientMessage",
+      "kind" : "enum member",
+      "value" : "93",
+      "line" : 113,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetWorldTime",
+      "kind" : "enum member",
+      "value" : "94",
+      "line" : 114,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_CreatePickup",
+      "kind" : "enum member",
+      "value" : "95",
+      "line" : 115,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleTireStatus",
+      "kind" : "enum member",
+      "value" : "98",
+      "line" : 116,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_MoveObject",
+      "kind" : "enum member",
+      "value" : "99",
+      "line" : 117,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_EnableStuntBonusForPlayer",
+      "kind" : "enum member",
+      "value" : "104",
+      "line" : 118,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_TextDrawSetString",
+      "kind" : "enum member",
+      "value" : "105",
+      "line" : 119,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetCheckpoint",
+      "kind" : "enum member",
+      "value" : "107",
+      "line" : 120,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GangZoneCreate",
+      "kind" : "enum member",
+      "value" : "108",
+      "line" : 121,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PlayCrimeReport",
+      "kind" : "enum member",
+      "value" : "112",
+      "line" : 122,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerAttachedObject",
+      "kind" : "enum member",
+      "value" : "113",
+      "line" : 123,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GangZoneDestroy",
+      "kind" : "enum member",
+      "value" : "120",
+      "line" : 124,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_GangZoneFlash",
+      "kind" : "enum member",
+      "value" : "121",
+      "line" : 125,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_StopObject",
+      "kind" : "enum member",
+      "value" : "122",
+      "line" : 126,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetNumberPlate",
+      "kind" : "enum member",
+      "value" : "123",
+      "line" : 127,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_TogglePlayerSpectating",
+      "kind" : "enum member",
+      "value" : "124",
+      "line" : 128,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PlayerSpectatePlayer",
+      "kind" : "enum member",
+      "value" : "126",
+      "line" : 129,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_PlayerSpectateVehicle",
+      "kind" : "enum member",
+      "value" : "127",
+      "line" : 130,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerWantedLevel",
+      "kind" : "enum member",
+      "value" : "133",
+      "line" : 131,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ShowTextDraw",
+      "kind" : "enum member",
+      "value" : "134",
+      "line" : 132,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_TextDrawHideForPlayer",
+      "kind" : "enum member",
+      "value" : "135",
+      "line" : 133,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ServerJoin",
+      "kind" : "enum member",
+      "value" : "137",
+      "line" : 134,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_ServerQuit",
+      "kind" : "enum member",
+      "value" : "138",
+      "line" : 135,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_InitGame",
+      "kind" : "enum member",
+      "value" : "139",
+      "line" : 136,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_RemovePlayerMapIcon",
+      "kind" : "enum member",
+      "value" : "144",
+      "line" : 137,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerAmmo",
+      "kind" : "enum member",
+      "value" : "145",
+      "line" : 138,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerGravity",
+      "kind" : "enum member",
+      "value" : "146",
+      "line" : 139,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleHealth",
+      "kind" : "enum member",
+      "value" : "147",
+      "line" : 140,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_AttachTrailerToVehicle",
+      "kind" : "enum member",
+      "value" : "148",
+      "line" : 141,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DetachTrailerFromVehicle",
+      "kind" : "enum member",
+      "value" : "149",
+      "line" : 142,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerDrunkHandling",
+      "kind" : "enum member",
+      "value" : "150",
+      "line" : 143,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_DestroyPickups",
+      "kind" : "enum member",
+      "value" : "151",
+      "line" : 144,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetWeather",
+      "kind" : "enum member",
+      "value" : "152",
+      "line" : 145,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerSkin",
+      "kind" : "enum member",
+      "value" : "153",
+      "line" : 146,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerInterior",
+      "kind" : "enum member",
+      "value" : "156",
+      "line" : 147,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerCameraPos",
+      "kind" : "enum member",
+      "value" : "157",
+      "line" : 148,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetPlayerCameraLookAt",
+      "kind" : "enum member",
+      "value" : "158",
+      "line" : 149,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehiclePos",
+      "kind" : "enum member",
+      "value" : "159",
+      "line" : 150,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleZAngle",
+      "kind" : "enum member",
+      "value" : "160",
+      "line" : 151,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetVehicleParamsForPlayer",
+      "kind" : "enum member",
+      "value" : "161",
+      "line" : 152,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_SetCameraBehindPlayer",
+      "kind" : "enum member",
+      "value" : "162",
+      "line" : 153,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WorldPlayerRemove",
+      "kind" : "enum member",
+      "value" : "163",
+      "line" : 154,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WorldVehicleAdd",
+      "kind" : "enum member",
+      "value" : "164",
+      "line" : 155,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WorldVehicleRemove",
+      "kind" : "enum member",
+      "value" : "165",
+      "line" : 156,
+      "char" : 2
+     },
+     {
+      "name" : "RPC_WorldPlayerDeath",
+      "kind" : "enum member",
+      "value" : "166",
+      "line" : 157,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "PacketEnumeration",
+    "kind" : "enum",
+    "line" : 160,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "ID_INTERNAL_PING",
+      "kind" : "enum member",
+      "value" : "6",
+      "line" : 162,
+      "char" : 2
+     },
+     {
+      "name" : "ID_PING",
+      "kind" : "enum member",
+      "value" : "7",
+      "line" : 163,
+      "char" : 2
+     },
+     {
+      "name" : "ID_PING_OPEN_CONNECTIONS",
+      "kind" : "enum member",
+      "value" : "8",
+      "line" : 164,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTED_PONG",
+      "kind" : "enum member",
+      "value" : "9",
+      "line" : 165,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REQUEST_STATIC_DATA",
+      "kind" : "enum member",
+      "value" : "10",
+      "line" : 166,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTION_REQUEST",
+      "kind" : "enum member",
+      "value" : "11",
+      "line" : 167,
+      "char" : 2
+     },
+     {
+      "name" : "ID_AUTH_KEY",
+      "kind" : "enum member",
+      "value" : "12",
+      "line" : 168,
+      "char" : 2
+     },
+     {
+      "name" : "ID_BROADCAST_PINGS",
+      "kind" : "enum member",
+      "value" : "15",
+      "line" : 169,
+      "char" : 2
+     },
+     {
+      "name" : "ID_SECURED_CONNECTION_RESPONSE",
+      "kind" : "enum member",
+      "value" : "16",
+      "line" : 170,
+      "char" : 2
+     },
+     {
+      "name" : "ID_SECURED_CONNECTION_CONFIRMATION",
+      "kind" : "enum member",
+      "value" : "17",
+      "line" : 171,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RPC_MAPPING",
+      "kind" : "enum member",
+      "value" : "18",
+      "line" : 172,
+      "char" : 2
+     },
+     {
+      "name" : "ID_SET_RANDOM_NUMBER_SEED",
+      "kind" : "enum member",
+      "value" : "21",
+      "line" : 173,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RPC",
+      "kind" : "enum member",
+      "value" : "22",
+      "line" : 174,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RPC_REPLY",
+      "kind" : "enum member",
+      "value" : "23",
+      "line" : 175,
+      "char" : 2
+     },
+     {
+      "name" : "ID_DETECT_LOST_CONNECTIONS",
+      "kind" : "enum member",
+      "value" : "24",
+      "line" : 176,
+      "char" : 2
+     },
+     {
+      "name" : "ID_OPEN_CONNECTION_REQUEST",
+      "kind" : "enum member",
+      "value" : "25",
+      "line" : 177,
+      "char" : 2
+     },
+     {
+      "name" : "ID_OPEN_CONNECTION_REPLY",
+      "kind" : "enum member",
+      "value" : "26",
+      "line" : 178,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RSA_PUBLIC_KEY_MISMATCH",
+      "kind" : "enum member",
+      "value" : "28",
+      "line" : 179,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTION_ATTEMPT_FAILED",
+      "kind" : "enum member",
+      "value" : "29",
+      "line" : 180,
+      "char" : 2
+     },
+     {
+      "name" : "ID_NEW_INCOMING_CONNECTION",
+      "kind" : "enum member",
+      "value" : "30",
+      "line" : 181,
+      "char" : 2
+     },
+     {
+      "name" : "ID_NO_FREE_INCOMING_CONNECTIONS",
+      "kind" : "enum member",
+      "value" : "31",
+      "line" : 182,
+      "char" : 2
+     },
+     {
+      "name" : "ID_DISCONNECTION_NOTIFICATION",
+      "kind" : "enum member",
+      "value" : "32",
+      "line" : 183,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTION_LOST",
+      "kind" : "enum member",
+      "value" : "33",
+      "line" : 184,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTION_REQUEST_ACCEPTED",
+      "kind" : "enum member",
+      "value" : "34",
+      "line" : 185,
+      "char" : 2
+     },
+     {
+      "name" : "ID_INITIALIZE_ENCRYPTION",
+      "kind" : "enum member",
+      "value" : "35",
+      "line" : 186,
+      "char" : 2
+     },
+     {
+      "name" : "ID_CONNECTION_BANNED",
+      "kind" : "enum member",
+      "value" : "36",
+      "line" : 187,
+      "char" : 2
+     },
+     {
+      "name" : "ID_INVALID_PASSWORD",
+      "kind" : "enum member",
+      "value" : "37",
+      "line" : 188,
+      "char" : 2
+     },
+     {
+      "name" : "ID_MODIFIED_PACKET",
+      "kind" : "enum member",
+      "value" : "38",
+      "line" : 189,
+      "char" : 2
+     },
+     {
+      "name" : "ID_PONG",
+      "kind" : "enum member",
+      "value" : "39",
+      "line" : 190,
+      "char" : 2
+     },
+     {
+      "name" : "ID_TIMESTAMP",
+      "kind" : "enum member",
+      "value" : "40",
+      "line" : 191,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RECEIVED_STATIC_DATA",
+      "kind" : "enum member",
+      "value" : "41",
+      "line" : 192,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REMOTE_DISCONNECTION_NOTIFICATION",
+      "kind" : "enum member",
+      "value" : "42",
+      "line" : 193,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REMOTE_CONNECTION_LOST",
+      "kind" : "enum member",
+      "value" : "43",
+      "line" : 194,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REMOTE_NEW_INCOMING_CONNECTION",
+      "kind" : "enum member",
+      "value" : "44",
+      "line" : 195,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REMOTE_EXISTING_CONNECTION",
+      "kind" : "enum member",
+      "value" : "45",
+      "line" : 196,
+      "char" : 2
+     },
+     {
+      "name" : "ID_REMOTE_STATIC_DATA",
+      "kind" : "enum member",
+      "value" : "46",
+      "line" : 197,
+      "char" : 2
+     },
+     {
+      "name" : "ID_ADVERTISE_SYSTEM",
+      "kind" : "enum member",
+      "value" : "56",
+      "line" : 198,
+      "char" : 2
+     },
+     {
+      "name" : "ID_VEHICLE_SYNC",
+      "kind" : "enum member",
+      "value" : "200",
+      "line" : 200,
+      "char" : 2
+     },
+     {
+      "name" : "ID_AIM_SYNC",
+      "kind" : "enum member",
+      "value" : "203",
+      "line" : 201,
+      "char" : 2
+     },
+     {
+      "name" : "ID_BULLET_SYNC",
+      "kind" : "enum member",
+      "value" : "206",
+      "line" : 202,
+      "char" : 2
+     },
+     {
+      "name" : "ID_PLAYER_SYNC",
+      "kind" : "enum member",
+      "value" : "207",
+      "line" : 203,
+      "char" : 2
+     },
+     {
+      "name" : "ID_MARKERS_SYNC",
+      "kind" : "enum member",
+      "value" : "208",
+      "line" : 204,
+      "char" : 2
+     },
+     {
+      "name" : "ID_UNOCCUPIED_SYNC",
+      "kind" : "enum member",
+      "value" : "209",
+      "line" : 205,
+      "char" : 2
+     },
+     {
+      "name" : "ID_TRAILER_SYNC",
+      "kind" : "enum member",
+      "value" : "210",
+      "line" : 206,
+      "char" : 2
+     },
+     {
+      "name" : "ID_PASSENGER_SYNC",
+      "kind" : "enum member",
+      "value" : "211",
+      "line" : 207,
+      "char" : 2
+     },
+     {
+      "name" : "ID_SPECTATOR_SYNC",
+      "kind" : "enum member",
+      "value" : "212",
+      "line" : 208,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RCON_COMMAND",
+      "kind" : "enum member",
+      "value" : "213",
+      "line" : 209,
+      "char" : 2
+     },
+     {
+      "name" : "ID_RCON_RESPONCE",
+      "kind" : "enum member",
+      "value" : "214",
+      "line" : 210,
+      "char" : 2
+     },
+     {
+      "name" : "ID_WEAPONS_UPDATE",
+      "kind" : "enum member",
+      "value" : "215",
+      "line" : 211,
+      "char" : 2
+     },
+     {
+      "name" : "ID_STATS_UPDATE",
+      "kind" : "enum member",
+      "value" : "216",
+      "line" : 212,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "PacketPriority",
+    "kind" : "enum",
+    "line" : 216,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "SYSTEM_PRIORITY",
+      "kind" : "enum member",
+      "value" : "0",
+      "line" : 218,
+      "char" : 2
+     },
+     {
+      "name" : "HIGH_PRIORITY",
+      "kind" : "enum member",
+      "value" : "1",
+      "line" : 219,
+      "char" : 2
+     },
+     {
+      "name" : "MEDIUM_PRIORITY",
+      "kind" : "enum member",
+      "value" : "2",
+      "line" : 220,
+      "char" : 2
+     },
+     {
+      "name" : "LOW_PRIORITY",
+      "kind" : "enum member",
+      "value" : "3",
+      "line" : 221,
+      "char" : 2
+     },
+     {
+      "name" : "NUMBER_OF_PRIORITIES",
+      "kind" : "enum member",
+      "value" : "4",
+      "line" : 222,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "PacketReliability",
+    "kind" : "enum",
+    "line" : 227,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "UNRELIABLE",
+      "kind" : "enum member",
+      "value" : "6",
+      "line" : 229,
+      "char" : 2
+     },
+     {
+      "name" : "UNRELIABLE_SEQUENCED",
+      "kind" : "enum member",
+      "value" : "7",
+      "line" : 230,
+      "char" : 2
+     },
+     {
+      "name" : "RELIABLE",
+      "kind" : "enum member",
+      "value" : "8",
+      "line" : 231,
+      "char" : 2
+     },
+     {
+      "name" : "RELIABLE_ORDERED",
+      "kind" : "enum member",
+      "value" : "9",
+      "line" : 232,
+      "char" : 2
+     },
+     {
+      "name" : "RELIABLE_SEQUENCED",
+      "kind" : "enum member",
+      "value" : "10",
+      "line" : 233,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "NetPatchType",
+    "kind" : "enum",
+    "line" : 236,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "INCOMING_RPC",
+      "kind" : "enum member",
+      "value" : "0",
+      "line" : 238,
+      "char" : 2
+     },
+     {
+      "name" : "OUTCOMING_RPC",
+      "kind" : "enum member",
+      "value" : "1",
+      "line" : 239,
+      "char" : 2
+     },
+     {
+      "name" : "INCOMING_PACKET",
+      "kind" : "enum member",
+      "value" : "2",
+      "line" : 240,
+      "char" : 2
+     },
+     {
+      "name" : "OUTCOMING_PACKET",
+      "kind" : "enum member",
+      "value" : "3",
+      "line" : 241,
+      "char" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "dllmain",
+  "kind" : "module",
+  "file" : "dllmain.d",
+  "members" : [
+   {
+    "name" : "core.sys.windows.windows",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.winbase",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.dll",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 20,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 31,
+    "protection" : "private"
+   },
+   {
+    "name" : "types",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "defines",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "structs",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "UniLib",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "CVector",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "g_hInst",
+    "kind" : "variable",
+    "line" : 14,
+    "char" : 21,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "Pv",
+    "originalType" : "HINSTANCE"
+   },
+   {
+    "name" : "pFont",
+    "kind" : "variable",
+    "line" : 15,
+    "char" : 20,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "C6UniLib8FontInfo",
+    "originalType" : "FontInfo"
+   },
+   {
+    "name" : "pTex",
+    "kind" : "variable",
+    "line" : 16,
+    "char" : 25,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "C6UniLib13CreateTexture",
+    "originalType" : "CreateTexture"
+   },
+   {
+    "name" : "DllMain",
+    "kind" : "function",
+    "line" : 18,
+    "char" : 23,
+    "deco" : "WPvkPvZi",
+    "originalType" : "extern (Windows) BOOL(HINSTANCE hInstance, ULONG ulReason, LPVOID pvReserved)",
+    "parameters" : [
+     {
+      "name" : "hInstance",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "ulReason",
+      "deco" : "k"
+     },
+     {
+      "name" : "pvReserved",
+      "deco" : "Pv"
+     }
+    ],
+    "endline" : 56,
+    "endchar" : 1
+   },
+   {
+    "name" : "mainloop",
+    "kind" : "function",
+    "line" : 58,
+    "char" : 23,
+    "deco" : "WZv",
+    "endline" : 79,
+    "endchar" : 1
+   },
+   {
+    "name" : "lastInRPC",
+    "kind" : "variable",
+    "line" : 81,
+    "char" : 17,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "h"
+   },
+   {
+    "name" : "lastOutRPC",
+    "kind" : "variable",
+    "line" : 81,
+    "char" : 28,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "h"
+   },
+   {
+    "name" : "lastInPacket",
+    "kind" : "variable",
+    "line" : 81,
+    "char" : 40,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "h"
+   },
+   {
+    "name" : "lastOutPacket",
+    "kind" : "variable",
+    "line" : 81,
+    "char" : 54,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "h"
+   },
+   {
+    "name" : "lastWndProc",
+    "kind" : "variable",
+    "line" : 82,
+    "char" : 16,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "k"
+   },
+   {
+    "name" : "Present",
+    "kind" : "function",
+    "line" : 83,
+    "char" : 23,
+    "deco" : "WPvZv",
+    "originalType" : "extern (Windows) void(IDirect3DDevice9 pDevice)",
+    "parameters" : [
+     {
+      "name" : "pDevice",
+      "deco" : "Pv"
+     }
+    ],
+    "endline" : 117,
+    "endchar" : 1
+   },
+   {
+    "name" : "SendSpawn",
+    "kind" : "function",
+    "line" : 119,
+    "char" : 6,
+    "deco" : "FZv",
+    "endline" : 128,
+    "endchar" : 1
+   },
+   {
+    "name" : "SendDeath",
+    "kind" : "function",
+    "line" : 130,
+    "char" : 6,
+    "deco" : "FZv",
+    "endline" : 144,
+    "endchar" : 1
+   },
+   {
+    "name" : "HandleRPCPacketFunc",
+    "kind" : "function",
+    "line" : 146,
+    "char" : 23,
+    "deco" : "WhKS7structs13RPCParametersZb",
+    "parameters" : [
+     {
+      "name" : "id",
+      "deco" : "h"
+     },
+     {
+      "name" : "RPC",
+      "deco" : "S7structs13RPCParameters",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ],
+    "endline" : 152,
+    "endchar" : 1
+   },
+   {
+    "name" : "OnSendRPC",
+    "kind" : "function",
+    "line" : 154,
+    "char" : 23,
+    "deco" : "WiKPvE7defines14PacketPriorityE7defines17PacketReliabilitygbZb",
+    "originalType" : "extern (Windows) bool(int uniqueID, ref BitStream parameters, PacketPriority priority, PacketReliability reliability, byte orderingChannel, bool shiftTimestamp)",
+    "parameters" : [
+     {
+      "name" : "uniqueID",
+      "deco" : "i"
+     },
+     {
+      "name" : "parameters",
+      "deco" : "Pv",
+      "storageClass" : [
+       "ref"
+      ]
+     },
+     {
+      "name" : "priority",
+      "deco" : "E7defines14PacketPriority"
+     },
+     {
+      "name" : "reliability",
+      "deco" : "E7defines17PacketReliability"
+     },
+     {
+      "name" : "orderingChannel",
+      "deco" : "g"
+     },
+     {
+      "name" : "shiftTimestamp",
+      "deco" : "b"
+     }
+    ],
+    "endline" : 158,
+    "endchar" : 1
+   },
+   {
+    "name" : "OnReceivePacket",
+    "kind" : "function",
+    "line" : 160,
+    "char" : 23,
+    "deco" : "WKS7structs6PacketZb",
+    "parameters" : [
+     {
+      "name" : "p",
+      "deco" : "S7structs6Packet",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ],
+    "endline" : 169,
+    "endchar" : 1
+   },
+   {
+    "name" : "OnSendPacket",
+    "kind" : "function",
+    "line" : 171,
+    "char" : 23,
+    "deco" : "WPPvE7defines14PacketPriorityE7defines17PacketReliabilityaZb",
+    "originalType" : "extern (Windows) bool(BitStream* bitStream, PacketPriority priority, PacketReliability reliability, char orderingChannel)",
+    "parameters" : [
+     {
+      "name" : "bitStream",
+      "deco" : "PPv"
+     },
+     {
+      "name" : "priority",
+      "deco" : "E7defines14PacketPriority"
+     },
+     {
+      "name" : "reliability",
+      "deco" : "E7defines17PacketReliability"
+     },
+     {
+      "name" : "orderingChannel",
+      "deco" : "a"
+     }
+    ],
+    "endline" : 182,
+    "endchar" : 1
+   },
+   {
+    "name" : "WndProc",
+    "kind" : "function",
+    "line" : 184,
+    "char" : 23,
+    "deco" : "WPvkkiZb",
+    "originalType" : "extern (Windows) bool(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)",
+    "parameters" : [
+     {
+      "name" : "hwnd",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "uMsg",
+      "deco" : "k"
+     },
+     {
+      "name" : "wParam",
+      "deco" : "k"
+     },
+     {
+      "name" : "lParam",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 188,
+    "endchar" : 1
+   }
+  ]
+ },
+ {
+  "name" : "structs",
+  "kind" : "module",
+  "file" : "structs.d",
+  "members" : [
+   {
+    "name" : "types",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "defines",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "PlayerID",
+    "kind" : "struct",
+    "line" : 6,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "binaryAddress",
+      "kind" : "variable",
+      "line" : 10,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "port",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 9,
+      "deco" : "t",
+      "offset" : 4,
+      "align" : 1
+     },
+     {
+      "name" : "opAssign",
+      "kind" : "function",
+      "line" : 14,
+      "char" : 15,
+      "deco" : "FNcKxS7structs8PlayerIDZS7structs8PlayerID",
+      "originalType" : "ref PlayerID(ref const PlayerID input)",
+      "parameters" : [
+       {
+        "name" : "input",
+        "deco" : "xS7structs8PlayerID",
+        "storageClass" : [
+         "ref"
+        ]
+       }
+      ],
+      "endline" : 19,
+      "endchar" : 2
+     }
+    ]
+   },
+   {
+    "name" : "NetworkID",
+    "kind" : "struct",
+    "line" : 22,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "peerToPeer",
+      "kind" : "variable",
+      "line" : 25,
+      "char" : 7,
+      "deco" : "b",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "playerId",
+      "kind" : "variable",
+      "line" : 26,
+      "char" : 11,
+      "deco" : "S7structs8PlayerID",
+      "offset" : 1,
+      "align" : 1
+     },
+     {
+      "name" : "localSystemId",
+      "kind" : "variable",
+      "line" : 27,
+      "char" : 9,
+      "deco" : "t",
+      "offset" : 7,
+      "align" : 1
+     },
+     {
+      "name" : "opAssign",
+      "kind" : "generated function",
+      "line" : 22,
+      "char" : 11,
+      "deco" : "FNcNjS7structs9NetworkIDZS7structs9NetworkID",
+      "originalType" : "ref return NetworkID(NetworkID p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S7structs9NetworkID"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "Packet",
+    "kind" : "struct",
+    "line" : 31,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "playerIndex",
+      "kind" : "variable",
+      "line" : 35,
+      "char" : 14,
+      "deco" : "t",
+      "originalType" : "PlayerIndex",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "playerId",
+      "kind" : "variable",
+      "line" : 38,
+      "char" : 11,
+      "deco" : "S7structs8PlayerID",
+      "offset" : 2,
+      "align" : 1
+     },
+     {
+      "name" : "length",
+      "kind" : "variable",
+      "line" : 42,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 8,
+      "align" : 1
+     },
+     {
+      "name" : "bitSize",
+      "kind" : "variable",
+      "line" : 45,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 12,
+      "align" : 1
+     },
+     {
+      "name" : "data",
+      "kind" : "variable",
+      "line" : 48,
+      "char" : 9,
+      "deco" : "Ph",
+      "offset" : 16,
+      "align" : 1
+     },
+     {
+      "name" : "deleteData",
+      "kind" : "variable",
+      "line" : 52,
+      "char" : 7,
+      "deco" : "b",
+      "offset" : 20,
+      "align" : 1
+     },
+     {
+      "name" : "opAssign",
+      "kind" : "generated function",
+      "line" : 31,
+      "char" : 11,
+      "deco" : "FNcNjS7structs6PacketZS7structs6Packet",
+      "originalType" : "ref return Packet(Packet p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S7structs6Packet"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "RPCParameters",
+    "kind" : "struct",
+    "line" : 56,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "input",
+      "kind" : "variable",
+      "line" : 60,
+      "char" : 9,
+      "deco" : "Ph",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "numberOfBitsOfData",
+      "kind" : "variable",
+      "line" : 63,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 4,
+      "align" : 1
+     },
+     {
+      "name" : "sender",
+      "kind" : "variable",
+      "line" : 66,
+      "char" : 11,
+      "deco" : "S7structs8PlayerID",
+      "offset" : 8,
+      "align" : 1
+     },
+     {
+      "name" : "recipient",
+      "kind" : "variable",
+      "line" : 69,
+      "char" : 8,
+      "deco" : "Pv",
+      "offset" : 14,
+      "align" : 1
+     },
+     {
+      "name" : "replyToSender",
+      "kind" : "variable",
+      "line" : 75,
+      "char" : 12,
+      "deco" : "Pv",
+      "originalType" : "BitStream",
+      "offset" : 18,
+      "align" : 1
+     },
+     {
+      "name" : "opAssign",
+      "kind" : "generated function",
+      "line" : 56,
+      "char" : 11,
+      "deco" : "FNcNjS7structs13RPCParametersZS7structs13RPCParameters",
+      "originalType" : "ref return RPCParameters(RPCParameters p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S7structs13RPCParameters"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "RPCNode",
+    "kind" : "struct",
+    "line" : 78,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "uniqueIdentifier",
+      "kind" : "variable",
+      "line" : 81,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "pFunc",
+      "kind" : "variable",
+      "line" : 82,
+      "char" : 8,
+      "deco" : "Pv",
+      "offset" : 1,
+      "align" : 1
+     }
+    ]
+   },
+   {
+    "name" : "RakNetStatisticsStruct",
+    "kind" : "struct",
+    "line" : 86,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "messageSendBuffer",
+      "kind" : "variable",
+      "line" : 90,
+      "char" : 44,
+      "deco" : "G4k",
+      "originalType" : "uint[PacketPriority.NUMBER_OF_PRIORITIES]",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "messagesSent",
+      "kind" : "variable",
+      "line" : 92,
+      "char" : 44,
+      "deco" : "G4k",
+      "originalType" : "uint[PacketPriority.NUMBER_OF_PRIORITIES]",
+      "offset" : 16,
+      "align" : 1
+     },
+     {
+      "name" : "messageDataBitsSent",
+      "kind" : "variable",
+      "line" : 94,
+      "char" : 44,
+      "deco" : "G4k",
+      "originalType" : "uint[PacketPriority.NUMBER_OF_PRIORITIES]",
+      "offset" : 32,
+      "align" : 1
+     },
+     {
+      "name" : "messageTotalBitsSent",
+      "kind" : "variable",
+      "line" : 96,
+      "char" : 44,
+      "deco" : "G4k",
+      "originalType" : "uint[PacketPriority.NUMBER_OF_PRIORITIES]",
+      "offset" : 48,
+      "align" : 1
+     },
+     {
+      "name" : "packetsContainingOnlyAcknowlegements",
+      "kind" : "variable",
+      "line" : 99,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 64,
+      "align" : 1
+     },
+     {
+      "name" : "acknowlegementsSent",
+      "kind" : "variable",
+      "line" : 101,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 68,
+      "align" : 1
+     },
+     {
+      "name" : "acknowlegementsPending",
+      "kind" : "variable",
+      "line" : 103,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 72,
+      "align" : 1
+     },
+     {
+      "name" : "acknowlegementBitsSent",
+      "kind" : "variable",
+      "line" : 105,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 76,
+      "align" : 1
+     },
+     {
+      "name" : "packetsContainingOnlyAcknowlegementsAndResends",
+      "kind" : "variable",
+      "line" : 108,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 80,
+      "align" : 1
+     },
+     {
+      "name" : "messageResends",
+      "kind" : "variable",
+      "line" : 111,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 84,
+      "align" : 1
+     },
+     {
+      "name" : "messageDataBitsResent",
+      "kind" : "variable",
+      "line" : 113,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 88,
+      "align" : 1
+     },
+     {
+      "name" : "messagesTotalBitsResent",
+      "kind" : "variable",
+      "line" : 115,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 92,
+      "align" : 1
+     },
+     {
+      "name" : "messagesOnResendQueue",
+      "kind" : "variable",
+      "line" : 117,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 96,
+      "align" : 1
+     },
+     {
+      "name" : "numberOfUnsplitMessages",
+      "kind" : "variable",
+      "line" : 120,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 100,
+      "align" : 1
+     },
+     {
+      "name" : "numberOfSplitMessages",
+      "kind" : "variable",
+      "line" : 122,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 104,
+      "align" : 1
+     },
+     {
+      "name" : "totalSplits",
+      "kind" : "variable",
+      "line" : 124,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 108,
+      "align" : 1
+     },
+     {
+      "name" : "packetsSent",
+      "kind" : "variable",
+      "line" : 127,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 112,
+      "align" : 1
+     },
+     {
+      "name" : "encryptionBitsSent",
+      "kind" : "variable",
+      "line" : 130,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 116,
+      "align" : 1
+     },
+     {
+      "name" : "totalBitsSent",
+      "kind" : "variable",
+      "line" : 132,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 120,
+      "align" : 1
+     },
+     {
+      "name" : "sequencedMessagesOutOfOrder",
+      "kind" : "variable",
+      "line" : 135,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 124,
+      "align" : 1
+     },
+     {
+      "name" : "sequencedMessagesInOrder",
+      "kind" : "variable",
+      "line" : 137,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 128,
+      "align" : 1
+     },
+     {
+      "name" : "orderedMessagesOutOfOrder",
+      "kind" : "variable",
+      "line" : 140,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 132,
+      "align" : 1
+     },
+     {
+      "name" : "orderedMessagesInOrder",
+      "kind" : "variable",
+      "line" : 142,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 136,
+      "align" : 1
+     },
+     {
+      "name" : "packetsReceived",
+      "kind" : "variable",
+      "line" : 145,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 140,
+      "align" : 1
+     },
+     {
+      "name" : "packetsWithBadCRCReceived",
+      "kind" : "variable",
+      "line" : 147,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 144,
+      "align" : 1
+     },
+     {
+      "name" : "bitsReceived",
+      "kind" : "variable",
+      "line" : 149,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 148,
+      "align" : 1
+     },
+     {
+      "name" : "bitsWithBadCRCReceived",
+      "kind" : "variable",
+      "line" : 151,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 152,
+      "align" : 1
+     },
+     {
+      "name" : "acknowlegementsReceived",
+      "kind" : "variable",
+      "line" : 153,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 156,
+      "align" : 1
+     },
+     {
+      "name" : "duplicateAcknowlegementsReceived",
+      "kind" : "variable",
+      "line" : 155,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 160,
+      "align" : 1
+     },
+     {
+      "name" : "messagesReceived",
+      "kind" : "variable",
+      "line" : 157,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 164,
+      "align" : 1
+     },
+     {
+      "name" : "invalidMessagesReceived",
+      "kind" : "variable",
+      "line" : 159,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 168,
+      "align" : 1
+     },
+     {
+      "name" : "duplicateMessagesReceived",
+      "kind" : "variable",
+      "line" : 161,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 172,
+      "align" : 1
+     },
+     {
+      "name" : "messagesWaitingForReassembly",
+      "kind" : "variable",
+      "line" : 163,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 176,
+      "align" : 1
+     },
+     {
+      "name" : "internalOutputQueueSize",
+      "kind" : "variable",
+      "line" : 165,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 180,
+      "align" : 1
+     },
+     {
+      "name" : "bitsPerSecond",
+      "kind" : "variable",
+      "line" : 167,
+      "char" : 9,
+      "deco" : "d",
+      "offset" : 184,
+      "align" : 1
+     },
+     {
+      "name" : "connectionStartTime",
+      "kind" : "variable",
+      "line" : 169,
+      "char" : 13,
+      "deco" : "k",
+      "originalType" : "RakNetTime",
+      "offset" : 192,
+      "align" : 1
+     }
+    ]
+   },
+   {
+    "name" : "stNetPatch",
+    "kind" : "struct",
+    "line" : 172,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "name",
+      "kind" : "variable",
+      "line" : 175,
+      "char" : 15,
+      "deco" : "Pxa",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "hotkey",
+      "kind" : "variable",
+      "line" : 176,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 4,
+      "align" : 1
+     },
+     {
+      "name" : "enabled",
+      "kind" : "variable",
+      "line" : 177,
+      "char" : 7,
+      "deco" : "b",
+      "offset" : 8,
+      "align" : 1
+     },
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "line" : 178,
+      "char" : 7,
+      "deco" : "g",
+      "offset" : 9,
+      "align" : 1
+     },
+     {
+      "name" : "type",
+      "kind" : "variable",
+      "line" : 179,
+      "char" : 15,
+      "deco" : "E7defines12NetPatchType",
+      "offset" : 10,
+      "align" : 1
+     }
+    ]
+   },
+   {
+    "name" : "stSAMP",
+    "kind" : "struct",
+    "line" : 182,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "pUnk0",
+      "kind" : "variable",
+      "line" : 185,
+      "char" : 14,
+      "deco" : "G2Pv",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "byteSpace",
+      "kind" : "variable",
+      "line" : 186,
+      "char" : 17,
+      "deco" : "G24h",
+      "originalType" : "uint8_t[24]",
+      "offset" : 8,
+      "align" : 1
+     },
+     {
+      "name" : "szIP",
+      "kind" : "variable",
+      "line" : 187,
+      "char" : 15,
+      "deco" : "G257a",
+      "offset" : 32,
+      "align" : 1
+     },
+     {
+      "name" : "szHostname",
+      "kind" : "variable",
+      "line" : 188,
+      "char" : 15,
+      "deco" : "G259a",
+      "offset" : 289,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk1",
+      "kind" : "variable",
+      "line" : 189,
+      "char" : 14,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 548,
+      "align" : 1
+     },
+     {
+      "name" : "ulPort",
+      "kind" : "variable",
+      "line" : 190,
+      "char" : 14,
+      "deco" : "k",
+      "originalType" : "uint32_t",
+      "offset" : 549,
+      "align" : 1
+     },
+     {
+      "name" : "ulMapIcons",
+      "kind" : "variable",
+      "line" : 191,
+      "char" : 18,
+      "deco" : "G100k",
+      "originalType" : "uint32_t[100]",
+      "offset" : 553,
+      "align" : 1
+     },
+     {
+      "name" : "iLanMode",
+      "kind" : "variable",
+      "line" : 192,
+      "char" : 11,
+      "deco" : "i",
+      "offset" : 953,
+      "align" : 1
+     },
+     {
+      "name" : "iGameState",
+      "kind" : "variable",
+      "line" : 193,
+      "char" : 11,
+      "deco" : "i",
+      "offset" : 957,
+      "align" : 1
+     },
+     {
+      "name" : "ulConnectTick",
+      "kind" : "variable",
+      "line" : 194,
+      "char" : 14,
+      "deco" : "k",
+      "originalType" : "uint32_t",
+      "offset" : 961,
+      "align" : 1
+     },
+     {
+      "name" : "pSettings",
+      "kind" : "variable",
+      "line" : 195,
+      "char" : 21,
+      "deco" : "PS7structs15stServerPresets",
+      "offset" : 965,
+      "align" : 1
+     },
+     {
+      "name" : "pRakClientInterface",
+      "kind" : "variable",
+      "line" : 196,
+      "char" : 12,
+      "deco" : "Pv",
+      "offset" : 969,
+      "align" : 1
+     },
+     {
+      "name" : "pPools",
+      "kind" : "variable",
+      "line" : 197,
+      "char" : 12,
+      "deco" : "Pv",
+      "offset" : 973,
+      "align" : 1
+     }
+    ]
+   },
+   {
+    "name" : "stServerPresets",
+    "kind" : "struct",
+    "line" : 200,
+    "char" : 11,
+    "members" : [
+     {
+      "name" : "byteCJWalk",
+      "kind" : "variable",
+      "line" : 203,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 0,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk0",
+      "kind" : "variable",
+      "line" : 204,
+      "char" : 13,
+      "deco" : "G4h",
+      "originalType" : "uint8_t[4]",
+      "offset" : 1,
+      "align" : 1
+     },
+     {
+      "name" : "fWorldBoundaries",
+      "kind" : "variable",
+      "line" : 205,
+      "char" : 11,
+      "deco" : "G4f",
+      "offset" : 5,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk1",
+      "kind" : "variable",
+      "line" : 206,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 21,
+      "align" : 1
+     },
+     {
+      "name" : "fGravity",
+      "kind" : "variable",
+      "line" : 207,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 22,
+      "align" : 1
+     },
+     {
+      "name" : "byteDisableInteriorEnterExits",
+      "kind" : "variable",
+      "line" : 208,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 26,
+      "align" : 1
+     },
+     {
+      "name" : "ulVehicleFriendlyFire",
+      "kind" : "variable",
+      "line" : 209,
+      "char" : 11,
+      "deco" : "k",
+      "originalType" : "uint32_t",
+      "offset" : 27,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk2",
+      "kind" : "variable",
+      "line" : 210,
+      "char" : 13,
+      "deco" : "G4h",
+      "originalType" : "uint8_t[4]",
+      "offset" : 31,
+      "align" : 1
+     },
+     {
+      "name" : "iClassesAvailable",
+      "kind" : "variable",
+      "line" : 211,
+      "char" : 7,
+      "deco" : "i",
+      "offset" : 35,
+      "align" : 1
+     },
+     {
+      "name" : "fNameTagsDistance",
+      "kind" : "variable",
+      "line" : 212,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 39,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk3",
+      "kind" : "variable",
+      "line" : 213,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 43,
+      "align" : 1
+     },
+     {
+      "name" : "byteWorldTime_Hour",
+      "kind" : "variable",
+      "line" : 214,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 44,
+      "align" : 1
+     },
+     {
+      "name" : "byteWorldTime_Minute",
+      "kind" : "variable",
+      "line" : 215,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 45,
+      "align" : 1
+     },
+     {
+      "name" : "byteWeather",
+      "kind" : "variable",
+      "line" : 216,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 46,
+      "align" : 1
+     },
+     {
+      "name" : "byteNoNametagsBehindWalls",
+      "kind" : "variable",
+      "line" : 217,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 47,
+      "align" : 1
+     },
+     {
+      "name" : "bytePlayerMarkersMode",
+      "kind" : "variable",
+      "line" : 218,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 48,
+      "align" : 1
+     },
+     {
+      "name" : "byteUnk4",
+      "kind" : "variable",
+      "line" : 219,
+      "char" : 13,
+      "deco" : "G3h",
+      "originalType" : "uint8_t[3]",
+      "offset" : 49,
+      "align" : 1
+     },
+     {
+      "name" : "fGlobalChatRadiusLimit",
+      "kind" : "variable",
+      "line" : 220,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 52,
+      "align" : 1
+     },
+     {
+      "name" : "byteShowNameTags",
+      "kind" : "variable",
+      "line" : 221,
+      "char" : 10,
+      "deco" : "h",
+      "originalType" : "uint8_t",
+      "offset" : 56,
+      "align" : 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "types",
+  "kind" : "module",
+  "file" : "types.d",
+  "members" : [
+   {
+    "name" : "IDirect3DDevice9",
+    "kind" : "alias",
+    "line" : 3,
+    "char" : 1,
+    "deco" : "Pv"
+   },
+   {
+    "name" : "IDirect3DTexture9",
+    "kind" : "alias",
+    "line" : 4,
+    "char" : 1,
+    "deco" : "Pv"
+   },
+   {
+    "name" : "ID3DXSprite",
+    "kind" : "alias",
+    "line" : 5,
+    "char" : 1,
+    "deco" : "Pv"
+   },
+   {
+    "name" : "D3DSURFACE_DESC",
+    "kind" : "alias",
+    "line" : 6,
+    "char" : 1,
+    "deco" : "Pv"
+   },
+   {
+    "name" : "DWORD",
+    "kind" : "alias",
+    "line" : 7,
+    "char" : 1,
+    "deco" : "k"
+   },
+   {
+    "name" : "D3DCOLOR",
+    "kind" : "alias",
+    "line" : 8,
+    "char" : 1,
+    "deco" : "k"
+   },
+   {
+    "name" : "BitStream",
+    "kind" : "alias",
+    "line" : 9,
+    "char" : 1,
+    "deco" : "Pv"
+   },
+   {
+    "name" : "uint8_t",
+    "kind" : "alias",
+    "line" : 10,
+    "char" : 1,
+    "deco" : "h"
+   },
+   {
+    "name" : "uint16_t",
+    "kind" : "alias",
+    "line" : 11,
+    "char" : 1,
+    "deco" : "t"
+   },
+   {
+    "name" : "uint32_t",
+    "kind" : "alias",
+    "line" : 12,
+    "char" : 1,
+    "deco" : "k"
+   },
+   {
+    "name" : "RakNetTime",
+    "kind" : "alias",
+    "line" : 14,
+    "char" : 12,
+    "deco" : "k"
+   },
+   {
+    "name" : "RakNetTimeNS",
+    "kind" : "alias",
+    "line" : 15,
+    "char" : 12,
+    "deco" : "l"
+   },
+   {
+    "name" : "PlayerIndex",
+    "kind" : "alias",
+    "line" : 16,
+    "char" : 14,
+    "deco" : "t"
+   }
+  ]
+ },
+ {
+  "name" : "UniLib",
+  "kind" : "module",
+  "file" : "UniLib.d",
+  "members" : [
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.runtime",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.memory",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.sys.windows.windows",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "types",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "defines",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "structs",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "CFontInfo",
+    "kind" : "interface",
+    "protection" : "export",
+    "line" : 15,
+    "char" : 2,
+    "members" : [
+     {
+      "name" : "Initialize",
+      "kind" : "function",
+      "line" : 17,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "originalType" : "extern (C++) void(IDirect3DDevice9 pDevice)",
+      "parameters" : [
+       {
+        "name" : "pDevice",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "Invalidate",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "Print",
+      "kind" : "function",
+      "line" : 19,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkPxaiiZv",
+      "originalType" : "extern (C++) void(DWORD color, const(char)* szText, int X, int Y)",
+      "parameters" : [
+       {
+        "name" : "color",
+        "deco" : "k"
+       },
+       {
+        "name" : "szText",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "PrintShadow",
+      "kind" : "function",
+      "line" : 20,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkPxaiiZv",
+      "originalType" : "extern (C++) void(DWORD color, const(char)* szText, int X, int Y)",
+      "parameters" : [
+       {
+        "name" : "color",
+        "deco" : "k"
+       },
+       {
+        "name" : "szText",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetHeight",
+      "kind" : "function",
+      "line" : 21,
+      "char" : 9,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZf"
+     },
+     {
+      "name" : "GetWidth",
+      "kind" : "function",
+      "line" : 22,
+      "char" : 9,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxaZf",
+      "parameters" : [
+       {
+        "name" : "szText",
+        "deco" : "Pxa"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "CDrawInfo",
+    "kind" : "interface",
+    "protection" : "export",
+    "line" : 24,
+    "char" : 2,
+    "members" : [
+     {
+      "name" : "Box",
+      "kind" : "function",
+      "line" : 26,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiiiikZv",
+      "originalType" : "extern (C++) void(int X, int Y, int W, int H, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i"
+       },
+       {
+        "name" : "H",
+        "deco" : "i"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "BorderBox",
+      "kind" : "function",
+      "line" : 27,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiiiikkZv",
+      "originalType" : "extern (C++) void(int X, int Y, int W, int H, DWORD boreder_color, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i"
+       },
+       {
+        "name" : "H",
+        "deco" : "i"
+       },
+       {
+        "name" : "boreder_color",
+        "deco" : "k"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "Line",
+      "kind" : "function",
+      "line" : 28,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiiiikZv",
+      "originalType" : "extern (C++) void(int X, int Y, int X2, int Y2, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "X2",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y2",
+        "deco" : "i"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "Initialize",
+      "kind" : "function",
+      "line" : 29,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "originalType" : "extern (C++) void(IDirect3DDevice9 pDevice)",
+      "parameters" : [
+       {
+        "name" : "pDevice",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "Invalidate",
+      "kind" : "function",
+      "line" : 30,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     }
+    ]
+   },
+   {
+    "name" : "CCreateTexture",
+    "kind" : "interface",
+    "protection" : "export",
+    "line" : 32,
+    "char" : 2,
+    "members" : [
+     {
+      "name" : "Begin",
+      "kind" : "function",
+      "line" : 34,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "End",
+      "kind" : "function",
+      "line" : 35,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "Clear",
+      "kind" : "function",
+      "line" : 36,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkZb",
+      "originalType" : "extern (C++) bool(D3DCOLOR color = 0)",
+      "parameters" : [
+       {
+        "name" : "color",
+        "deco" : "k",
+        "default" : "0u"
+       }
+      ]
+     },
+     {
+      "name" : "Render",
+      "kind" : "function",
+      "line" : 37,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiiiifZb",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i",
+        "default" : "-1"
+       },
+       {
+        "name" : "H",
+        "deco" : "i",
+        "default" : "-1"
+       },
+       {
+        "name" : "R",
+        "deco" : "f",
+        "default" : "0.000000F"
+       }
+      ]
+     },
+     {
+      "name" : "Release",
+      "kind" : "function",
+      "line" : 38,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "Init",
+      "kind" : "function",
+      "line" : 39,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "ReInit",
+      "kind" : "function",
+      "line" : 40,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiiZv",
+      "parameters" : [
+       {
+        "name" : "width",
+        "deco" : "i"
+       },
+       {
+        "name" : "height",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetSprite",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 15,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPv",
+      "originalType" : "extern (C++) ID3DXSprite()"
+     },
+     {
+      "name" : "GetTexture",
+      "kind" : "function",
+      "line" : 42,
+      "char" : 21,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPv",
+      "originalType" : "extern (C++) IDirect3DTexture9()"
+     },
+     {
+      "name" : "GetSurfaceDesc",
+      "kind" : "function",
+      "line" : 43,
+      "char" : 19,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPv",
+      "originalType" : "extern (C++) D3DSURFACE_DESC()"
+     }
+    ]
+   },
+   {
+    "name" : "CBSInfo",
+    "kind" : "interface",
+    "protection" : "export",
+    "line" : 45,
+    "char" : 2,
+    "members" : [
+     {
+      "name" : "Write",
+      "kind" : "function",
+      "line" : 47,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvkZv",
+      "originalType" : "extern (C++) void(void* data, size_t size)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "size",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "WriteComp",
+      "kind" : "function",
+      "line" : 48,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RgZv",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "g"
+       }
+      ]
+     },
+     {
+      "name" : "WriteComp",
+      "kind" : "function",
+      "line" : 49,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RtZv",
+      "originalType" : "extern (C++) void(WORD data)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "t"
+       }
+      ]
+     },
+     {
+      "name" : "WriteComp",
+      "kind" : "function",
+      "line" : 50,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkZv",
+      "originalType" : "extern (C++) void(DWORD data)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "WriteBits",
+      "kind" : "function",
+      "line" : 51,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPhibZv",
+      "parameters" : [
+       {
+        "name" : "input",
+        "deco" : "Ph"
+       },
+       {
+        "name" : "numberOfBitsToWrite",
+        "deco" : "i"
+       },
+       {
+        "name" : "rightAlignedBits",
+        "deco" : "b",
+        "default" : "true"
+       }
+      ]
+     },
+     {
+      "name" : "SetWriteOffset",
+      "kind" : "function",
+      "line" : 52,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiZv",
+      "parameters" : [
+       {
+        "name" : "offset",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetWriteOffset",
+      "kind" : "function",
+      "line" : 53,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "Read",
+      "kind" : "function",
+      "line" : 54,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvkZb",
+      "originalType" : "extern (C++) bool(void* data, size_t size)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "size",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "ReadComp",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RKgZb",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "g",
+        "storageClass" : [
+         "ref"
+        ]
+       }
+      ]
+     },
+     {
+      "name" : "ReadComp",
+      "kind" : "function",
+      "line" : 56,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RKtZb",
+      "originalType" : "extern (C++) bool(ref WORD data)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "t",
+        "storageClass" : [
+         "ref"
+        ]
+       }
+      ]
+     },
+     {
+      "name" : "ReadComp",
+      "kind" : "function",
+      "line" : 57,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RKkZb",
+      "originalType" : "extern (C++) bool(ref DWORD data)",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "k",
+        "storageClass" : [
+         "ref"
+        ]
+       }
+      ]
+     },
+     {
+      "name" : "ReadBit",
+      "kind" : "function",
+      "line" : 58,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZb"
+     },
+     {
+      "name" : "SetReadOffset",
+      "kind" : "function",
+      "line" : 59,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiZv",
+      "parameters" : [
+       {
+        "name" : "offset",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetReadOffset",
+      "kind" : "function",
+      "line" : 60,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "SetNumberOfBitsAllocated",
+      "kind" : "function",
+      "line" : 61,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkZv",
+      "parameters" : [
+       {
+        "name" : "lengthInBits",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "GetNumberOfUnreadBits",
+      "kind" : "function",
+      "line" : 62,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "GetNumberOfBitsUsed",
+      "kind" : "function",
+      "line" : 63,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "GetNumberOfBytesUsed",
+      "kind" : "function",
+      "line" : 64,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     }
+    ]
+   },
+   {
+    "name" : "RakClientInterface",
+    "kind" : "interface",
+    "protection" : "export",
+    "line" : 66,
+    "char" : 2,
+    "members" : [
+     {
+      "name" : "dRakClientInterface",
+      "kind" : "function",
+      "line" : 68,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "Connect",
+      "kind" : "function",
+      "line" : 69,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxattkiZb",
+      "parameters" : [
+       {
+        "name" : "host",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "serverPort",
+        "deco" : "t"
+       },
+       {
+        "name" : "clientPort",
+        "deco" : "t"
+       },
+       {
+        "name" : "depreciated",
+        "deco" : "k"
+       },
+       {
+        "name" : "threadSleepTimer",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "Disconnect",
+      "kind" : "function",
+      "line" : 70,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkhZv",
+      "originalType" : "extern (C++) void(uint blockDuration, ubyte orderingChannel = 0)",
+      "parameters" : [
+       {
+        "name" : "blockDuration",
+        "deco" : "k"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "h",
+        "default" : "cast(ubyte)0u"
+       }
+      ]
+     },
+     {
+      "name" : "InitializeSecurity",
+      "kind" : "function",
+      "line" : 71,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxaPxaZv",
+      "parameters" : [
+       {
+        "name" : "privKeyP",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "privKeyQ",
+        "deco" : "Pxa"
+       }
+      ]
+     },
+     {
+      "name" : "SetPassword",
+      "kind" : "function",
+      "line" : 72,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxaZv",
+      "parameters" : [
+       {
+        "name" : "_password",
+        "deco" : "Pxa"
+       }
+      ]
+     },
+     {
+      "name" : "HasPassword",
+      "kind" : "function",
+      "line" : 73,
+      "char" : 15,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxb"
+     },
+     {
+      "name" : "Send",
+      "kind" : "function",
+      "line" : 74,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxaxiE7defines14PacketPriorityE7defines17PacketReliabilityaZb",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "length",
+        "deco" : "xi"
+       },
+       {
+        "name" : "priority",
+        "deco" : "E7defines14PacketPriority"
+       },
+       {
+        "name" : "reliability",
+        "deco" : "E7defines17PacketReliability"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "a"
+       }
+      ]
+     },
+     {
+      "name" : "Send",
+      "kind" : "function",
+      "line" : 75,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvE7defines14PacketPriorityE7defines17PacketReliabilityaZb",
+      "originalType" : "extern (C++) bool(BitStream bitStream, PacketPriority priority, PacketReliability reliability, char orderingChannel)",
+      "parameters" : [
+       {
+        "name" : "bitStream",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "priority",
+        "deco" : "E7defines14PacketPriority"
+       },
+       {
+        "name" : "reliability",
+        "deco" : "E7defines17PacketReliability"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "a"
+       }
+      ]
+     },
+     {
+      "name" : "Receive",
+      "kind" : "function",
+      "line" : 76,
+      "char" : 11,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPS7structs6Packet"
+     },
+     {
+      "name" : "DeallocatePacket",
+      "kind" : "function",
+      "line" : 77,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPS7structs6PacketZv",
+      "parameters" : [
+       {
+        "name" : "packet",
+        "deco" : "PS7structs6Packet"
+       }
+      ]
+     },
+     {
+      "name" : "PingServer",
+      "kind" : "function",
+      "line" : 78,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "PingServer",
+      "kind" : "function",
+      "line" : 79,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxattbZv",
+      "parameters" : [
+       {
+        "name" : "host",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "serverPort",
+        "deco" : "t"
+       },
+       {
+        "name" : "clientPort",
+        "deco" : "t"
+       },
+       {
+        "name" : "onlyReplyOnAcceptingConnections",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "GetAveragePing",
+      "kind" : "function",
+      "line" : 80,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "GetLastPing",
+      "kind" : "function",
+      "line" : 81,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "GetLowestPing",
+      "kind" : "function",
+      "line" : 82,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZi"
+     },
+     {
+      "name" : "GetPlayerPing",
+      "kind" : "function",
+      "line" : 83,
+      "char" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RxS7structs8PlayerIDZi",
+      "originalType" : "extern (C++) int(const PlayerID playerId)",
+      "parameters" : [
+       {
+        "name" : "playerId",
+        "deco" : "xS7structs8PlayerID"
+       }
+      ]
+     },
+     {
+      "name" : "StartOccasionalPing",
+      "kind" : "function",
+      "line" : 84,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "StopOccasionalPing",
+      "kind" : "function",
+      "line" : 85,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "IsConnected",
+      "kind" : "function",
+      "line" : 86,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZb"
+     },
+     {
+      "name" : "GetSynchronizedRandomInteger",
+      "kind" : "function",
+      "line" : 87,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZk"
+     },
+     {
+      "name" : "GenerateCompressionLayer",
+      "kind" : "function",
+      "line" : 88,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPkbZb",
+      "parameters" : [
+       {
+        "name" : "inputFrequencyTable",
+        "deco" : "Pk"
+       },
+       {
+        "name" : "inputLayer",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "DeleteCompressionLayer",
+      "kind" : "function",
+      "line" : 89,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RbZb",
+      "parameters" : [
+       {
+        "name" : "inputLayer",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "RegisterAsRemoteProcedureCall",
+      "kind" : "function",
+      "line" : 90,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiPvZv",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       },
+       {
+        "name" : "pFunc",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "RegisterClassMemberRPC",
+      "kind" : "function",
+      "line" : 91,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiPvZv",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       },
+       {
+        "name" : "functionPointer",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "UnregisterAsRemoteProcedureCall",
+      "kind" : "function",
+      "line" : 92,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiZv",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       }
+      ]
+     },
+     {
+      "name" : "RPC",
+      "kind" : "function",
+      "line" : 93,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiPxakE7defines14PacketPriorityE7defines17PacketReliabilityabZb",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       },
+       {
+        "name" : "data",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "bitLength",
+        "deco" : "k"
+       },
+       {
+        "name" : "priority",
+        "deco" : "E7defines14PacketPriority"
+       },
+       {
+        "name" : "reliability",
+        "deco" : "E7defines17PacketReliability"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "a"
+       },
+       {
+        "name" : "shiftTimestamp",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "RPC",
+      "kind" : "function",
+      "line" : 94,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiPvE7defines14PacketPriorityE7defines17PacketReliabilityabZb",
+      "originalType" : "extern (C++) bool(int* uniqueID, BitStream bitStream, PacketPriority priority, PacketReliability reliability, char orderingChannel, bool shiftTimestamp)",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       },
+       {
+        "name" : "bitStream",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "priority",
+        "deco" : "E7defines14PacketPriority"
+       },
+       {
+        "name" : "reliability",
+        "deco" : "E7defines17PacketReliability"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "a"
+       },
+       {
+        "name" : "shiftTimestamp",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "RPC_",
+      "kind" : "function",
+      "line" : 95,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPiPvE7defines14PacketPriorityE7defines17PacketReliabilityabS7structs9NetworkIDZb",
+      "originalType" : "extern (C++) bool(int* uniqueID, BitStream bitStream, PacketPriority priority, PacketReliability reliability, char orderingChannel, bool shiftTimestamp, NetworkID networkID)",
+      "parameters" : [
+       {
+        "name" : "uniqueID",
+        "deco" : "Pi"
+       },
+       {
+        "name" : "bitStream",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "priority",
+        "deco" : "E7defines14PacketPriority"
+       },
+       {
+        "name" : "reliability",
+        "deco" : "E7defines17PacketReliability"
+       },
+       {
+        "name" : "orderingChannel",
+        "deco" : "a"
+       },
+       {
+        "name" : "shiftTimestamp",
+        "deco" : "b"
+       },
+       {
+        "name" : "networkID",
+        "deco" : "S7structs9NetworkID"
+       }
+      ]
+     },
+     {
+      "name" : "SetTrackFrequencyTable",
+      "kind" : "function",
+      "line" : 96,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RbZv",
+      "parameters" : [
+       {
+        "name" : "b",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "GetSendFrequencyTable",
+      "kind" : "function",
+      "line" : 97,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPkZb",
+      "parameters" : [
+       {
+        "name" : "outputFrequencyTable",
+        "deco" : "Pk"
+       }
+      ]
+     },
+     {
+      "name" : "GetCompressionRatio",
+      "kind" : "function",
+      "line" : 98,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxf"
+     },
+     {
+      "name" : "GetDecompressionRatio",
+      "kind" : "function",
+      "line" : 99,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxf"
+     },
+     {
+      "name" : "AttachPlugin",
+      "kind" : "function",
+      "line" : 100,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "parameters" : [
+       {
+        "name" : "messageHandler",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "DetachPlugin",
+      "kind" : "function",
+      "line" : 101,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "parameters" : [
+       {
+        "name" : "messageHandler",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "GetStaticServerData",
+      "kind" : "function",
+      "line" : 102,
+      "char" : 13,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPv",
+      "originalType" : "extern (C++) BitStream()"
+     },
+     {
+      "name" : "SetStaticServerData",
+      "kind" : "function",
+      "line" : 103,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxaxiZv",
+      "parameters" : [
+       {
+        "name" : "data",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "length",
+        "deco" : "xi"
+       }
+      ]
+     },
+     {
+      "name" : "GetStaticClientData",
+      "kind" : "function",
+      "line" : 104,
+      "char" : 13,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RxS7structs8PlayerIDZPv",
+      "originalType" : "extern (C++) BitStream(const PlayerID playerId)",
+      "parameters" : [
+       {
+        "name" : "playerId",
+        "deco" : "xS7structs8PlayerID"
+       }
+      ]
+     },
+     {
+      "name" : "SetStaticClientData",
+      "kind" : "function",
+      "line" : 105,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RxS7structs8PlayerIDPxaxiZv",
+      "originalType" : "extern (C++) void(const PlayerID playerId, const(char)* data, const(int) length)",
+      "parameters" : [
+       {
+        "name" : "playerId",
+        "deco" : "xS7structs8PlayerID"
+       },
+       {
+        "name" : "data",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "length",
+        "deco" : "xi"
+       }
+      ]
+     },
+     {
+      "name" : "SendStaticClientDataToServer",
+      "kind" : "function",
+      "line" : 106,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZv"
+     },
+     {
+      "name" : "GetServerID",
+      "kind" : "function",
+      "line" : 107,
+      "char" : 19,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxS7structs8PlayerID"
+     },
+     {
+      "name" : "GetPlayerID",
+      "kind" : "function",
+      "line" : 108,
+      "char" : 19,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxS7structs8PlayerID"
+     },
+     {
+      "name" : "GetInternalID",
+      "kind" : "function",
+      "line" : 109,
+      "char" : 19,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxS7structs8PlayerID"
+     },
+     {
+      "name" : "PlayerIDToDottedIP",
+      "kind" : "function",
+      "line" : 110,
+      "char" : 17,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RxS7structs8PlayerIDZPxa",
+      "originalType" : "extern (C++) const(char)*(const PlayerID playerId)",
+      "parameters" : [
+       {
+        "name" : "playerId",
+        "deco" : "xS7structs8PlayerID"
+       }
+      ]
+     },
+     {
+      "name" : "PushBackPacket",
+      "kind" : "function",
+      "line" : 111,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPS7structs6PacketbZv",
+      "parameters" : [
+       {
+        "name" : "packet",
+        "deco" : "PS7structs6Packet"
+       },
+       {
+        "name" : "pushAtHead",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "SetRouterInterface",
+      "kind" : "function",
+      "line" : 112,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "parameters" : [
+       {
+        "name" : "routerInterface",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "RemoveRouterInterface",
+      "kind" : "function",
+      "line" : 113,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPvZv",
+      "parameters" : [
+       {
+        "name" : "routerInterface",
+        "deco" : "Pv"
+       }
+      ]
+     },
+     {
+      "name" : "SetTimeoutTime",
+      "kind" : "function",
+      "line" : 114,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RkZv",
+      "originalType" : "extern (C++) void(RakNetTime timeMS)",
+      "parameters" : [
+       {
+        "name" : "timeMS",
+        "deco" : "k"
+       }
+      ]
+     },
+     {
+      "name" : "SetMTUSize",
+      "kind" : "function",
+      "line" : 115,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RiZb",
+      "parameters" : [
+       {
+        "name" : "size",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetMTUSize",
+      "kind" : "function",
+      "line" : 116,
+      "char" : 14,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZxi"
+     },
+     {
+      "name" : "AllowConnectionResponseIPMigration",
+      "kind" : "function",
+      "line" : 117,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RbZv",
+      "parameters" : [
+       {
+        "name" : "allow",
+        "deco" : "b"
+       }
+      ]
+     },
+     {
+      "name" : "AdvertiseSystem",
+      "kind" : "function",
+      "line" : 118,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RPxatPxaiZv",
+      "parameters" : [
+       {
+        "name" : "host",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "remotePort",
+        "deco" : "t"
+       },
+       {
+        "name" : "data",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "dataLength",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "GetStatistics",
+      "kind" : "function",
+      "line" : 119,
+      "char" : 34,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZPxS7structs22RakNetStatisticsStruct"
+     },
+     {
+      "name" : "ApplyNetworkSimulator",
+      "kind" : "function",
+      "line" : 120,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RdttZv",
+      "parameters" : [
+       {
+        "name" : "maxSendBPS",
+        "deco" : "d"
+       },
+       {
+        "name" : "minExtraPing",
+        "deco" : "t"
+       },
+       {
+        "name" : "extraPingVariance",
+        "deco" : "t"
+       }
+      ]
+     },
+     {
+      "name" : "IsNetworkSimulatorActive",
+      "kind" : "function",
+      "line" : 121,
+      "char" : 8,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZb"
+     },
+     {
+      "name" : "GetPlayerIndex",
+      "kind" : "function",
+      "line" : 122,
+      "char" : 15,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "RZt",
+      "originalType" : "extern (C++) PlayerIndex()"
+     }
+    ]
+   },
+   {
+    "name" : "CreateFontInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 128,
+    "char" : 12,
+    "deco" : "WPxaikZC6UniLib9CFontInfo",
+    "originalType" : "extern (Windows) CFontInfo(const(char)* szFontName, int fontHeight, DWORD dwCreateFlags)",
+    "parameters" : [
+     {
+      "name" : "szFontName",
+      "deco" : "Pxa"
+     },
+     {
+      "name" : "fontHeight",
+      "deco" : "i"
+     },
+     {
+      "name" : "dwCreateFlags",
+      "deco" : "k"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryFontInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 129,
+    "char" : 7,
+    "deco" : "WKC6UniLib9CFontInfoZv",
+    "parameters" : [
+     {
+      "name" : "pFont",
+      "deco" : "C6UniLib9CFontInfo",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "CreateDrawInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 132,
+    "char" : 12,
+    "deco" : "WiZC6UniLib9CDrawInfo",
+    "parameters" : [
+     {
+      "name" : "numVertices",
+      "deco" : "i"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryDrawInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 133,
+    "char" : 7,
+    "deco" : "WKC6UniLib9CDrawInfoZv",
+    "parameters" : [
+     {
+      "name" : "pDraw",
+      "deco" : "C6UniLib9CDrawInfo",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "CreateCTexture",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 136,
+    "char" : 17,
+    "deco" : "WPviiZC6UniLib14CCreateTexture",
+    "originalType" : "extern (Windows) CCreateTexture(IDirect3DDevice9 pDevice, int width, int height)",
+    "parameters" : [
+     {
+      "name" : "pDevice",
+      "deco" : "Pv"
+     },
+     {
+      "name" : "width",
+      "deco" : "i"
+     },
+     {
+      "name" : "height",
+      "deco" : "i"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryCTexture",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 137,
+    "char" : 7,
+    "deco" : "WKC6UniLib14CCreateTextureZv",
+    "parameters" : [
+     {
+      "name" : "pTexture",
+      "deco" : "C6UniLib14CCreateTexture",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "CreateBSInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 140,
+    "char" : 10,
+    "deco" : "WPvZC6UniLib7CBSInfo",
+    "originalType" : "extern (Windows) CBSInfo(BitStream BS)",
+    "parameters" : [
+     {
+      "name" : "BS",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryBSInfo",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 141,
+    "char" : 7,
+    "deco" : "WC6UniLib7CBSInfoZv",
+    "parameters" : [
+     {
+      "name" : "pBS",
+      "deco" : "C6UniLib7CBSInfo"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterMainloop",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 144,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryMainloop",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 145,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterPresent",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 147,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryPresent",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 148,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterReset",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 150,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryReset",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 151,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterHandleRPCPacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 153,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryHandleRPCPacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 154,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterSendRPC",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 156,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestorySendRPC",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 157,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterRecivePacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 159,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryRecivePacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 160,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterSendPacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 162,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestorySendPacket",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 163,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "RegisterWndProc",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 165,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryWndProc",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 166,
+    "char" : 7,
+    "deco" : "WPvZv",
+    "parameters" : [
+     {
+      "name" : "pFunc",
+      "deco" : "Pv"
+     }
+    ]
+   },
+   {
+    "name" : "GetD3DDevice",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 169,
+    "char" : 19,
+    "deco" : "WZPv",
+    "originalType" : "extern (Windows) IDirect3DDevice9()"
+   },
+   {
+    "name" : "IsLoaded",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 170,
+    "char" : 7,
+    "deco" : "WZb"
+   },
+   {
+    "name" : "GetRakClient",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 171,
+    "char" : 21,
+    "deco" : "WZC6UniLib18RakClientInterface"
+   },
+   {
+    "name" : "CreateBitStream",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 174,
+    "char" : 12,
+    "deco" : "WZPv",
+    "originalType" : "extern (Windows) BitStream()"
+   },
+   {
+    "name" : "CreateBitStream2",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 175,
+    "char" : 12,
+    "deco" : "WiZPv",
+    "originalType" : "extern (Windows) BitStream(int initialBytesToAllocate)",
+    "parameters" : [
+     {
+      "name" : "initialBytesToAllocate",
+      "deco" : "i"
+     }
+    ]
+   },
+   {
+    "name" : "CreateBitStream3",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 176,
+    "char" : 12,
+    "deco" : "WPhkbZPv",
+    "originalType" : "extern (Windows) BitStream(ubyte* _data, uint lengthInBytes, bool _copyData)",
+    "parameters" : [
+     {
+      "name" : "_data",
+      "deco" : "Ph"
+     },
+     {
+      "name" : "lengthInBytes",
+      "deco" : "k"
+     },
+     {
+      "name" : "_copyData",
+      "deco" : "b"
+     }
+    ]
+   },
+   {
+    "name" : "DestoryBitStream",
+    "kind" : "function",
+    "protection" : "export",
+    "line" : 177,
+    "char" : 7,
+    "deco" : "WKPvZv",
+    "originalType" : "extern (Windows) void(ref BitStream pBS)",
+    "parameters" : [
+     {
+      "name" : "pBS",
+      "deco" : "Pv",
+      "storageClass" : [
+       "ref"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "FontInfo",
+    "kind" : "class",
+    "line" : 180,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 182,
+      "char" : 2,
+      "deco" : "FPxaikZC6UniLib8FontInfo",
+      "originalType" : "(const(char)* szFontName, int fontHeight, DWORD dwCreateFlags)",
+      "parameters" : [
+       {
+        "name" : "szFontName",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "fontHeight",
+        "deco" : "i"
+       },
+       {
+        "name" : "dwCreateFlags",
+        "deco" : "k"
+       }
+      ],
+      "endline" : 185,
+      "endchar" : 2
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 186,
+      "char" : 2,
+      "deco" : "FZv",
+      "endline" : 189,
+      "endchar" : 2
+     },
+     {
+      "name" : "Print",
+      "kind" : "function",
+      "line" : 190,
+      "char" : 7,
+      "deco" : "FkPxaiibZv",
+      "originalType" : "void(DWORD color, const(char)* szText, int X, int Y, bool shadow = false)",
+      "parameters" : [
+       {
+        "name" : "color",
+        "deco" : "k"
+       },
+       {
+        "name" : "szText",
+        "deco" : "Pxa"
+       },
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "shadow",
+        "deco" : "b",
+        "default" : "false"
+       }
+      ],
+      "endline" : 195,
+      "endchar" : 2
+     },
+     {
+      "name" : "GetHeight",
+      "kind" : "function",
+      "line" : 196,
+      "char" : 8,
+      "deco" : "FZf",
+      "endline" : 199,
+      "endchar" : 2
+     },
+     {
+      "name" : "GetWidth",
+      "kind" : "function",
+      "line" : 200,
+      "char" : 8,
+      "deco" : "FPxaZf",
+      "parameters" : [
+       {
+        "name" : "szText",
+        "deco" : "Pxa"
+       }
+      ],
+      "endline" : 203,
+      "endchar" : 2
+     },
+     {
+      "name" : "_pFont",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 205,
+      "char" : 12,
+      "deco" : "C6UniLib9CFontInfo",
+      "originalType" : "CFontInfo",
+      "offset" : 8
+     },
+     {
+      "name" : "__xdtor",
+      "kind" : "alias"
+     }
+    ]
+   },
+   {
+    "name" : "DrawInfo",
+    "kind" : "class",
+    "line" : 207,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 209,
+      "char" : 2,
+      "deco" : "FiZC6UniLib8DrawInfo",
+      "originalType" : "(int numVertices)",
+      "parameters" : [
+       {
+        "name" : "numVertices",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 212,
+      "endchar" : 2
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 213,
+      "char" : 2,
+      "deco" : "FZv",
+      "endline" : 216,
+      "endchar" : 2
+     },
+     {
+      "name" : "Box",
+      "kind" : "function",
+      "line" : 217,
+      "char" : 7,
+      "deco" : "FiiiikZv",
+      "originalType" : "void(int X, int Y, int W, int H, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i"
+       },
+       {
+        "name" : "H",
+        "deco" : "i"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ],
+      "endline" : 220,
+      "endchar" : 2
+     },
+     {
+      "name" : "BorderBox",
+      "kind" : "function",
+      "line" : 221,
+      "char" : 7,
+      "deco" : "FiiiikkZv",
+      "originalType" : "void(int X, int Y, int W, int H, DWORD boreder_color, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i"
+       },
+       {
+        "name" : "H",
+        "deco" : "i"
+       },
+       {
+        "name" : "boreder_color",
+        "deco" : "k"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ],
+      "endline" : 224,
+      "endchar" : 2
+     },
+     {
+      "name" : "Line",
+      "kind" : "function",
+      "line" : 225,
+      "char" : 7,
+      "deco" : "FiiiikZv",
+      "originalType" : "void(int X, int Y, int X2, int Y2, DWORD color)",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "X2",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y2",
+        "deco" : "i"
+       },
+       {
+        "name" : "color",
+        "deco" : "k"
+       }
+      ],
+      "endline" : 228,
+      "endchar" : 2
+     },
+     {
+      "name" : "_pDraw",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 230,
+      "char" : 12,
+      "deco" : "C6UniLib9CDrawInfo",
+      "originalType" : "CDrawInfo",
+      "offset" : 8
+     },
+     {
+      "name" : "__xdtor",
+      "kind" : "alias"
+     }
+    ]
+   },
+   {
+    "name" : "CreateTexture",
+    "kind" : "class",
+    "line" : 232,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 234,
+      "char" : 2,
+      "deco" : "FPviiZC6UniLib13CreateTexture",
+      "originalType" : "(IDirect3DDevice9 pDevice, int width, int height)",
+      "parameters" : [
+       {
+        "name" : "pDevice",
+        "deco" : "Pv"
+       },
+       {
+        "name" : "width",
+        "deco" : "i"
+       },
+       {
+        "name" : "height",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 237,
+      "endchar" : 2
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 238,
+      "char" : 2,
+      "deco" : "FZv",
+      "endline" : 241,
+      "endchar" : 2
+     },
+     {
+      "name" : "Begin",
+      "kind" : "function",
+      "line" : 242,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 245,
+      "endchar" : 2
+     },
+     {
+      "name" : "End",
+      "kind" : "function",
+      "line" : 246,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 249,
+      "endchar" : 2
+     },
+     {
+      "name" : "Clear",
+      "kind" : "function",
+      "line" : 250,
+      "char" : 7,
+      "deco" : "FkZb",
+      "originalType" : "bool(D3DCOLOR color = 0)",
+      "parameters" : [
+       {
+        "name" : "color",
+        "deco" : "k",
+        "default" : "0u"
+       }
+      ],
+      "endline" : 253,
+      "endchar" : 2
+     },
+     {
+      "name" : "Render",
+      "kind" : "function",
+      "line" : 254,
+      "char" : 7,
+      "deco" : "FiiiifZb",
+      "parameters" : [
+       {
+        "name" : "X",
+        "deco" : "i"
+       },
+       {
+        "name" : "Y",
+        "deco" : "i"
+       },
+       {
+        "name" : "W",
+        "deco" : "i",
+        "default" : "-1"
+       },
+       {
+        "name" : "H",
+        "deco" : "i",
+        "default" : "-1"
+       },
+       {
+        "name" : "R",
+        "deco" : "f",
+        "default" : "0.000000F"
+       }
+      ],
+      "endline" : 257,
+      "endchar" : 2
+     },
+     {
+      "name" : "_pTex",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 259,
+      "char" : 17,
+      "deco" : "C6UniLib14CCreateTexture",
+      "originalType" : "CCreateTexture",
+      "offset" : 8
+     },
+     {
+      "name" : "__xdtor",
+      "kind" : "alias"
+     }
+    ]
+   },
+   {
+    "name" : "BSInfo",
+    "kind" : "class",
+    "line" : 261,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 263,
+      "char" : 2,
+      "deco" : "FPvZC6UniLib6BSInfo",
+      "originalType" : "(BitStream BS)",
+      "parameters" : [
+       {
+        "name" : "BS",
+        "deco" : "Pv"
+       }
+      ],
+      "endline" : 266,
+      "endchar" : 2
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 267,
+      "char" : 2,
+      "deco" : "FZv",
+      "endline" : 270,
+      "endchar" : 2
+     },
+     {
+      "kind" : "template",
+      "line" : 271,
+      "char" : 2,
+      "name" : "rw",
+      "parameters" : [
+       {
+        "name" : "T",
+        "kind" : "type"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "Write",
+        "kind" : "function",
+        "line" : 273,
+        "char" : 8,
+        "type" : "void(T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T"
+         }
+        ],
+        "endline" : 276,
+        "endchar" : 3
+       },
+       {
+        "name" : "Read",
+        "kind" : "function",
+        "line" : 277,
+        "char" : 8,
+        "type" : "bool(ref T v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "T",
+          "storageClass" : [
+           "ref"
+          ]
+         }
+        ],
+        "endline" : 280,
+        "endchar" : 3
+       }
+      ]
+     },
+     {
+      "name" : "Interface",
+      "kind" : "variable",
+      "line" : 282,
+      "char" : 10,
+      "deco" : "C6UniLib7CBSInfo",
+      "originalType" : "CBSInfo",
+      "offset" : 8
+     },
+     {
+      "name" : "__xdtor",
+      "kind" : "alias"
+     }
+    ]
+   }
+  ]
+ }
+]
